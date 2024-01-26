@@ -1,0 +1,35 @@
+.profession::before {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 1.5px;
+    background-color: gray;
+    left: 0;
+    top: 15px;
+}
+
+@keyframes wave {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    20%, 60% {
+      transform: rotate(-10deg);
+    }
+    40%, 80% {
+      transform: rotate(10deg);
+    }
+  }
+
+  .hand-wave {
+    animation: wave 1.5s infinite; /* You can adjust the animation duration */
+    transform-origin: bottom center;
+  }
+
+  .list-border {
+    border-bottom: 0.5px solid #12141d;
+  }
+
+  .list-first {
+    border-top: 0.5px solid #12141d;
+  }
+  
