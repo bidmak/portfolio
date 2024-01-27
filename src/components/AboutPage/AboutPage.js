@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = () => {
+const AboutPage = () => {
   return (
     <div
       class="orido_tm_section w-full h-auto clear-both float-left"
@@ -9,7 +9,7 @@ const About = () => {
       <div class="w-full h-auto clear-both float-left bg-[#6244C5] px-24 mx-auto pt-[180px] pb-[120px]">
         <div class=" w-full h-auto max-w-[1070px] mx-auto my-0 flex items-start space-x-10">
           <div class=" w-[65%] relative pr-[38px]">
-            <span class="element absolute top-0 right-full  mt-[-20px]">
+            <span class=" element absolute top-0 right-full  mt-[-20px]">
               <svg
                 width="86"
                 height="84"
@@ -51,7 +51,7 @@ const About = () => {
               </h3>
             </div>
             <div class="text w-full float-left mb-[50px]">
-              <p class="text-[rgba(255,255,255,.7)] font-light leading-[32px]">
+              <p class="text-[rgba(255,255,255,.7)] font-normal leading-[32px]">
                 Hi, my name is Samuel Makanjuola, and I live in Glasgow, UK. I'm
                 a passionate and results-driven individual with a master's
                 degree in Advanced Software Engineering from the University of
@@ -146,4 +146,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;

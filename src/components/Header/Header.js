@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../logo.jpg";
 
 const Header = () => {
   const NAV_LINKS = [
@@ -26,7 +25,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="z-50 shadow position: fixed bg-white w-full">
+    <header className="z-50 shadow fixed bg-white w-full">
       <nav className="justify-between flex align-center my-5 px-20">
         <div className="">
           <h3 className="font-bold text-xl" >Sameul Bidmak</h3>
@@ -37,7 +36,7 @@ const Header = () => {
             NAV_LINKS.map(item => {
               return (
                 <li>
-                  <a className="p-3 px-5 hover:bg-[#6244C5] hover:rounded-2xl hover:text-white hover:font-medium" key={item.label} >{item.page}</a>
+                  <a className="pb-1 mr-5 hover:border-b-[2.5px] hover:border-gray-500" key={item.label} >{item.page}</a>
                 </li>
               )
             })

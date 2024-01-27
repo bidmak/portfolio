@@ -25,11 +25,5 @@
     transform-origin: bottom center;
   }
 
-  .list-border {
-    border-bottom: 0.5px solid #12141d;
-  }
-
-  .list-first {
-    border-top: 0.5px solid #12141d;
-  }
+ 
   

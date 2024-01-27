@@ -1,6 +1,7 @@
 import React from "react";
+import "./ExperiencePage.css"
 
-const Experience = () => {
+const ExperiencePage = () => {
   return (
     <section
       class=" w-full h-auto clear-both float-left"
@@ -17,9 +18,9 @@ const Experience = () => {
                 <div class="list-border list-first w-full flex items-center justify-between relative pt-[27px] pb-[26px] pl-[25px] pr-[35px]">
                   <div class="left w-[40%] flex">
                     <div class="flex flex-col items-center justify-center">
-                      <span class=" block text-[#6244C5] text-base">2021</span>
+                      <span class=" block text-[#6244C5] text-base font-medium">2021</span>
                       <span class=" block text-[#6244C5] text-sm ">-</span>
-                      <span class=" block text-[#6244C5] text-base ">2023</span>
+                      <span class=" block text-[#6244C5] text-base font-medium">2023</span>
                     </div>
                     <h3 class="title text-[26px] font-medium pl-[30px] transition-all duration-300 ">
                       Software Developer
@@ -62,9 +63,9 @@ const Experience = () => {
                 <div class="list-border w-full flex items-center justify-between relative pt-[27px] pb-[26px] pl-[25px] pr-[35px]">
                   <div class="left w-[40%] flex">
                     <div class="flex flex-col items-center justify-center">
-                      <span class=" block text-[#6244C5] text-base">2019</span>
+                      <span class=" block text-[#6244C5] text-base font-medium">2019</span>
                       <span class=" block text-[#6244C5] text-sm ">-</span>
-                      <span class=" block text-[#6244C5] text-base ">2021</span>
+                      <span class=" block text-[#6244C5] text-base font-medium">2021</span>
                     </div>
                     <h3 class="title text-[26px] font-medium pl-[30px] transition-all duration-300">
                       Support Engineer
@@ -107,9 +108,9 @@ const Experience = () => {
                 <div class="list-border w-full flex items-center justify-between relative pt-[27px] pb-[26px] pl-[25px] pr-[35px]">
                   <div class="left w-[40%] flex">
                     <div class="flex flex-col items-center justify-center">
-                      <span class=" block text-[#6244C5] text-base">2017</span>
+                      <span class=" block text-[#6244C5] text-base font-medium">2017</span>
                       <span class=" block text-[#6244C5] text-sm ">-</span>
-                      <span class=" block text-[#6244C5] text-base ">2019</span>
+                      <span class=" block text-[#6244C5] text-base font-medium">2019</span>
                     </div>
                     <h3 class="title text-[26px] font-medium pl-[30px] transition-all duration-300">
                       Graduate Engineer
@@ -152,9 +153,9 @@ const Experience = () => {
                 <div class="list-border w-full flex items-center justify-between relative pt-[27px] pb-[26px] pl-[25px] pr-[35px]">
                   <div class="left w-[40%] flex">
                     <div class="flex flex-col items-center justify-center">
-                      <span class=" block text-[#6244C5] text-base">2016</span>
+                      <span class=" block text-[#6244C5] text-base font-medium">2016</span>
                       <span class=" block text-[#6244C5] text-sm ">-</span>
-                      <span class=" block text-[#6244C5] text-base ">2016</span>
+                      <span class=" block text-[#6244C5] text-base font-medium">2016</span>
                     </div>
                     <h3 class="title text-[26px] font-medium pl-[30px] transition-all duration-300">
                       Mech Engr Intern
@@ -202,4 +203,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default ExperiencePage;

@@ -1,9 +1,11 @@
 import React from "react";
-import hand from "../hand.svg";
-import instagram from "../instagram.svg";
-import dev from "../dev.jpg";
+import hand from "../../assets/icons/hand.svg";
+import instagram from "../../assets/icons/instagram.svg";
+import dev from "../../assets/images/dev.jpg";
+import { HiArrowDown } from "react-icons/hi";
+import "./HomePage.css"
 
-const Home = () => {
+const HomePage = () => {
   return (
     <section
       id="home"
@@ -57,9 +59,10 @@ const Home = () => {
         <div className="relative inline-block">
           <img src={dev} alt="developer" className="max-w-[600px]" />
         </div>
+        <HiArrowDown size={35} className="animate-bounce	mb-4" />
       </div>
     </section>
   );
 };
 
-export default Home;
+export default HomePage;
