@@ -8,16 +8,16 @@ const Header = () => {
       label: "home",
     },
     {
+      page: "About",
+      label: "about",
+    },
+    {
       page: "Experience",
       label: "experience",
     },
     {
       page: "Projects",
       label: "projects",
-    },
-    {
-      page: "About",
-      label: "about",
     },
     {
       page: "Contact",
@@ -29,7 +29,7 @@ const Header = () => {
     <header className="z-50 shadow position: fixed bg-white w-full">
       <nav className="justify-between flex align-center my-5 px-20">
         <div className="">
-          <h3 className="font-bold text-xl " >Sameul Bidmak</h3>
+          <h3 className="font-bold text-xl" >Sameul Bidmak</h3>
         </div>
         <div className="md:flex md:space-x-12 mr-10 items-center">
           <ul className="flex space-x-5 mr-16">

@@ -3,7 +3,7 @@ import React from "react";
 const Experience = () => {
   return (
     <section
-      class=" w-full h-auto clear-both float-left z-40"
+      class=" w-full h-auto clear-both float-left"
       id="experience"
     >
       <div class=" w-full h-auto clear-both float-left px-0 py-[120px] bg-gray-100">
@@ -11,7 +11,7 @@ const Experience = () => {
           <div class=" w-full float-left">
             <h3 class=" text-[36px] font-bold">Experience</h3>
           </div>
-          <div class="service_list w-full h-auto clear-both float-left mt-[100px] relative">
+          <div class="service_list w-full h-auto clear-both float-left mt-[80px] relative">
             <ul class="relative z-[2]">
               <li class="current relative">
                 <div class="list-border list-first w-full flex items-center justify-between relative pt-[27px] pb-[26px] pl-[25px] pr-[35px]">
@@ -21,7 +21,7 @@ const Experience = () => {
                       <span class=" block text-[#6244C5] text-sm ">-</span>
                       <span class=" block text-[#6244C5] text-base ">2023</span>
                     </div>
-                    <h3 class="title text-[30px] font-medium pl-[30px] transition-all duration-300 ">
+                    <h3 class="title text-[26px] font-medium pl-[30px] transition-all duration-300 ">
                       Software Developer
                       <span className="text-gray-400 text-xl block">
                         Outcess Limited
@@ -66,7 +66,7 @@ const Experience = () => {
                       <span class=" block text-[#6244C5] text-sm ">-</span>
                       <span class=" block text-[#6244C5] text-base ">2021</span>
                     </div>
-                    <h3 class="title text-[30px] font-medium pl-[30px] transition-all duration-300">
+                    <h3 class="title text-[26px] font-medium pl-[30px] transition-all duration-300">
                       Support Engineer
                       <span className="text-gray-400 text-xl block">
                         Netcom Africa Limited
@@ -111,7 +111,7 @@ const Experience = () => {
                       <span class=" block text-[#6244C5] text-sm ">-</span>
                       <span class=" block text-[#6244C5] text-base ">2019</span>
                     </div>
-                    <h3 class="title text-[30px] font-medium pl-[30px] transition-all duration-300">
+                    <h3 class="title text-[26px] font-medium pl-[30px] transition-all duration-300">
                       Graduate Engineer
                       <span className="text-gray-400 text-xl block">
                         TotalEnergies
@@ -156,7 +156,7 @@ const Experience = () => {
                       <span class=" block text-[#6244C5] text-sm ">-</span>
                       <span class=" block text-[#6244C5] text-base ">2016</span>
                     </div>
-                    <h3 class="title text-[30px] font-medium pl-[30px] transition-all duration-300">
+                    <h3 class="title text-[26px] font-medium pl-[30px] transition-all duration-300">
                       Mech Engr Intern
                       <span className="text-gray-400 text-xl block">
                         Beta Glass PLC
