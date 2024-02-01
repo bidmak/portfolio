@@ -1,12 +1,9 @@
 import React from "react";
-import "./ExperiencePage.css"
+import "./ExperiencePage.css";
 
-const ExperiencePage = () => {
+const ExperiencePage = ({ id }) => {
   return (
-    <section
-      class=" w-full h-auto clear-both float-left"
-      id="experience"
-    >
+    <section class=" w-full h-auto clear-both float-left" id={id}>
       <div class=" w-full h-auto clear-both float-left px-0 py-[120px] bg-gray-100">
         <div class="container px-24 mx-auto">
           <div class=" w-full float-left">
@@ -18,9 +15,13 @@ const ExperiencePage = () => {
                 <div class="list-border list-first w-full flex items-center justify-between relative pt-[27px] pb-[26px] pl-[25px] pr-[35px]">
                   <div class="left w-[40%] flex">
                     <div class="flex flex-col items-center justify-center">
-                      <span class=" block text-[#6244C5] text-base font-medium">2021</span>
+                      <span class=" block text-[#6244C5] text-base font-medium">
+                        2021
+                      </span>
                       <span class=" block text-[#6244C5] text-sm ">-</span>
-                      <span class=" block text-[#6244C5] text-base font-medium">2023</span>
+                      <span class=" block text-[#6244C5] text-base font-medium">
+                        2023
+                      </span>
                     </div>
                     <h3 class="title text-[26px] font-medium pl-[30px] transition-all duration-300 ">
                       Software Developer
@@ -32,7 +33,7 @@ const ExperiencePage = () => {
                   <div class="right w-[60%] flex items-center justify-between">
                     <div class="text pr-[150px]">
                       <p class="transition-all duration-300">
-                      Collaborative software engineer adept at understanding
+                        Collaborative software engineer adept at understanding
                         cross-team requirements. Specialized in crafting...
                       </p>
                     </div>
@@ -53,19 +54,20 @@ const ExperiencePage = () => {
                       </svg>
                     </div>
                   </div>
-                  <a
-                    class=" absolute inset-0 z-[5]"
-                    href="#"
-                  ></a>
+                  <a class=" absolute inset-0 z-[5]" href="#"></a>
                 </div>
               </li>
               <li class="relative">
                 <div class="list-border w-full flex items-center justify-between relative pt-[27px] pb-[26px] pl-[25px] pr-[35px]">
                   <div class="left w-[40%] flex">
                     <div class="flex flex-col items-center justify-center">
-                      <span class=" block text-[#6244C5] text-base font-medium">2019</span>
+                      <span class=" block text-[#6244C5] text-base font-medium">
+                        2019
+                      </span>
                       <span class=" block text-[#6244C5] text-sm ">-</span>
-                      <span class=" block text-[#6244C5] text-base font-medium">2021</span>
+                      <span class=" block text-[#6244C5] text-base font-medium">
+                        2021
+                      </span>
                     </div>
                     <h3 class="title text-[26px] font-medium pl-[30px] transition-all duration-300">
                       Support Engineer
@@ -98,19 +100,20 @@ const ExperiencePage = () => {
                       </svg>
                     </div>
                   </div>
-                  <a
-                    class=" absolute inset-0 z-[5]"
-                    href="#"
-                  ></a>
+                  <a class=" absolute inset-0 z-[5]" href="#"></a>
                 </div>
               </li>
               <li class="relative">
                 <div class="list-border w-full flex items-center justify-between relative pt-[27px] pb-[26px] pl-[25px] pr-[35px]">
                   <div class="left w-[40%] flex">
                     <div class="flex flex-col items-center justify-center">
-                      <span class=" block text-[#6244C5] text-base font-medium">2017</span>
+                      <span class=" block text-[#6244C5] text-base font-medium">
+                        2017
+                      </span>
                       <span class=" block text-[#6244C5] text-sm ">-</span>
-                      <span class=" block text-[#6244C5] text-base font-medium">2019</span>
+                      <span class=" block text-[#6244C5] text-base font-medium">
+                        2019
+                      </span>
                     </div>
                     <h3 class="title text-[26px] font-medium pl-[30px] transition-all duration-300">
                       Graduate Engineer
@@ -122,7 +125,7 @@ const ExperiencePage = () => {
                   <div class="right w-[60%] flex items-center justify-between">
                     <div class="text pr-[150px]">
                       <p class="transition-all duration-300">
-                      Collaborative software engineer adept at understanding
+                        Collaborative software engineer adept at understanding
                         cross-team requirements. Specialized in crafting...
                       </p>
                     </div>
@@ -143,19 +146,20 @@ const ExperiencePage = () => {
                       </svg>
                     </div>
                   </div>
-                  <a
-                    class=" absolute inset-0 z-[5]"
-                    href="#"
-                  ></a>
+                  <a class=" absolute inset-0 z-[5]" href="#"></a>
                 </div>
               </li>
               <li class="relative">
                 <div class="list-border w-full flex items-center justify-between relative pt-[27px] pb-[26px] pl-[25px] pr-[35px]">
                   <div class="left w-[40%] flex">
                     <div class="flex flex-col items-center justify-center">
-                      <span class=" block text-[#6244C5] text-base font-medium">2016</span>
+                      <span class=" block text-[#6244C5] text-base font-medium">
+                        2016
+                      </span>
                       <span class=" block text-[#6244C5] text-sm ">-</span>
-                      <span class=" block text-[#6244C5] text-base font-medium">2016</span>
+                      <span class=" block text-[#6244C5] text-base font-medium">
+                        2016
+                      </span>
                     </div>
                     <h3 class="title text-[26px] font-medium pl-[30px] transition-all duration-300">
                       Mech Engr Intern
@@ -167,7 +171,7 @@ const ExperiencePage = () => {
                   <div class="right w-[60%] flex items-center justify-between">
                     <div class="text pr-[150px]">
                       <p class="transition-all duration-300">
-                      Collaborative software engineer adept at understanding
+                        Collaborative software engineer adept at understanding
                         cross-team requirements. Specialized in crafting...
                       </p>
                     </div>
@@ -188,10 +192,7 @@ const ExperiencePage = () => {
                       </svg>
                     </div>
                   </div>
-                  <a
-                    class=" absolute inset-0 z-[5]"
-                    href="#"
-                  ></a>
+                  <a class=" absolute inset-0 z-[5]" href="#"></a>
                 </div>
               </li>
             </ul>

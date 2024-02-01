@@ -1,48 +1,14 @@
 import React from "react";
+import NavList from "../Common/NavList";
+import Company from "../Common/Company";
 
-const Header = () => {
-  const NAV_LINKS = [
-    {
-      page: "Home",
-      label: "home",
-    },
-    {
-      page: "About",
-      label: "about",
-    },
-    {
-      page: "Experience",
-      label: "experience",
-    },
-    {
-      page: "Projects",
-      label: "projects",
-    },
-    {
-      page: "Contact",
-      label: "contact",
-    },
-  ];
-
+const Header = ({ navItems, companyName }) => {
   return (
     <header className="z-50 shadow fixed bg-white w-full">
-      <nav className="justify-between flex align-center my-5 px-20">
-        <div className="">
-          <h3 className="font-bold text-xl" >Sameul Bidmak</h3>
-        </div>
+      <nav className="container justify-between flex align-center my-5 px-20">
+        <Company companyName={companyName} />
         <div className="md:flex md:space-x-12 mr-10 items-center">
-          <ul className="flex space-x-5 mr-16">
-          {
-            NAV_LINKS.map(item => {
-              return (
-                <li>
-                  <a className="pb-1 mr-5 hover:border-b-[2.5px] hover:border-gray-500" key={item.label} >{item.page}</a>
-                </li>
-              )
-            })
-          }
-          </ul>
-          
+          <NavList navItems={navItems} />
         </div>
       </nav>
     </header>
