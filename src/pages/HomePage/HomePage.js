@@ -1,10 +1,10 @@
 import React from "react";
 import "./HomePage.css";
 import { HiArrowDown } from "react-icons/hi";
-import PersonalInfo from "../Common/PersonalInfo";
-import AboutMe from "../Common/AboutMe";
-import FollowMe from "../Common/FollowMe";
-import HomeImage from "../Common/HomeImage";
+import PersonalInfo from "../../components/Common/PersonalInfo";
+import AboutMe from "../../components/Common/AboutMe";
+import FollowMe from "../../components/Common/FollowMe";
+import HomeImage from "../../components/Common/HomeImage";
 
 const HomePage = ({ id, name, profession, aboutMe, followLinks }) => {
   return (

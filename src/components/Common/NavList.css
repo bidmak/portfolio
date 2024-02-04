@@ -1,0 +1,4 @@
+.active-border {
+    border-bottom: 2.5px solid gray;
+    transition: border-bottom 0.3s ease-in-out;
+}

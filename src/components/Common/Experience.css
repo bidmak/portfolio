@@ -1,0 +1,38 @@
+.list-border {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .list-border.list-first {
+    border-top: 2px solid #6244c5;
+  }
+  
+  .list-border:hover {
+    background-color: #6244c5;
+    color: #fff;
+  }
+  
+  .list-border.following {
+    background-color: #6244c5;
+    color: #fff;
+  }
+  
+  /* Add this style for the tooltip */
+.tooltip {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .group:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  

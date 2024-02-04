@@ -1,13 +1,26 @@
 import Header from "./components/Header/Header";
-import HomePage from "./components/HomePage/HomePage";
-import AboutPage from "./components/AboutPage/AboutPage";
-import ExperiencePage from "./components/ExperiencePage/ExperiencePage";
+import HomePage from "./pages/HomePage/HomePage";
+import AboutPage from "./pages/AboutPage/AboutPage";
+import ExperiencePage from "./pages/ExperiencePage/ExperiencePage";
+import ProjectPage from "./pages/ProjectPage/ProjectPage";
+import ContactPage from "./pages/ContactPage/ContactPage";
 import Footer from "./components/Footer/Footer";
 import * as data from "./data/data";
+import { useState } from "react";
+import Popup from "./components/Common/Popup";
 
 function App() {
+  const [popup, setPopup] = useState(false);
+  const [popItems, setPopItems] = useState(data.popData);
+
+  const processPopup = (items) => {
+    setPopup(true);
+    setPopItems(items);
+  };
   return (
     <main>
+      <Popup popup={popup} setPopup={setPopup} popItems={popItems} />
+
       {/* Header component */}
       <Header companyName={data.companyName} navItems={data.navItems} />
 
@@ -28,7 +41,23 @@ function App() {
       />
 
       {/* Experience Page component */}
-      <ExperiencePage id={data.navItems.experience.label} />
+      <ExperiencePage
+        id={data.navItems.experience.label}
+        experiences={data.experiences}
+        processPopup={processPopup}
+      />
+
+      {/* Project Page component */}
+      <ProjectPage
+        id={data.navItems.projects.label}
+        projects={data.projects}
+        processPopup={processPopup}
+      />
+
+      <ContactPage
+        id={data.navItems.contact.label}
+        contactDetails={data.contactDetails}
+      />
 
       {/* Footer component */}
       <Footer />
