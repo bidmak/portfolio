@@ -4,17 +4,17 @@ import ProjectGridItems from "../../components/Common/ProjectGridItems";
 const ProjectPage = ({ id, projects, processPopup }) => {
   return (
     <section
-      className="orido_tm_section w-full h-auto clear-both float-left bg-gray-300"
+      className=" w-full h-auto clear-both float-left bg-neutral-200"
       id={id}
     >
-      <div className="orido_tm_news w-full h-auto clear-both float-left py-[120px]">
+      <div className=" w-full h-auto clear-both float-left py-[120px]">
         <div className="container px-24">
-          <div className="orido_tm_main_title w-full float-left">
-            <h3 className="tracking-[-2px] text-[56px] font-bold">
-              <span className="relative">My Projects</span>
+          <div className=" w-full float-left">
+            <h3 className="tracking-[-1px] text-[40px] font-bold">
+              My Projects
             </h3>
           </div>
-          <div className="news_list w-full h-auto clear-both float-left mt-[100px]">
+          <div className=" w-full h-auto clear-both float-left mt-[80px]">
             <ProjectGridItems projects={projects} processPopup={processPopup} />
           </div>
         </div>

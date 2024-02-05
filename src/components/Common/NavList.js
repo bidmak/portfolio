@@ -48,15 +48,16 @@ const NavList = ({ navItems }) => {
   }, [navItemsArray, activeSection]);
 
   return (
-    <ul className="flex space-x-5 mr-16">
+    <ul className="flex space-x-10 mr-16">
       {navItemsArray.map(({ page, label }) => {
         return (
-          <li key={label}>
+          <li
+            key={label}
+            className="transition duration-200 ease-out hover:scale-[1.12] "
+          >
             <a
               href={`#${label}`}
-              className={`pb-1 mr-5 hover:text-yellow-800 ${
-                label === activeSection ? "active-border" : ""
-              }`}
+              className={`${label === activeSection ? "active-border" : ""}`}
               onClick={(event) => scrollToSection(label, event)}
             >
               {page}

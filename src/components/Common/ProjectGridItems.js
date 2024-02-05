@@ -3,7 +3,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 const ProjectGridItems = ({ projects, processPopup }) => {
   return (
-    <div className="grid-container grid grid-cols-2 gap-4">
+    <div className="grid-container grid grid-cols-2 gap-8">
       {projects.map(
         ({
           projectName,
@@ -27,21 +27,27 @@ const ProjectGridItems = ({ projects, processPopup }) => {
                 });
               }}
             >
-              <div className="grid-item group bg-slate-50 flex justify-between items-center p-2 rounded-lg border-[1px] border-slate-400 transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300">
-                <div className="details font-semibold text-lg ps-2">
-                  <h3 className="text-start mb-4">{projectType}</h3>
-                  <h3 className="text-start mb-4">{projectName}</h3>
-                  <div className="flex font-normal text-base group-hover:underline group-hover:underline-offset-4 group-hover:text-blue-800">
-                    <span className="mr-2">Read More</span>
-                    <BsArrowUpRight className="w-[16px] h-[16px]" />
-                  </div>
-                </div>
+              <div className="relative text-start group rounded-lg bg-white divide-y-2 divide-gray-300 ">
                 <div
-                  className="grid-img h-[240px] w-[70%] relative border-[1px] border-slate-400 rounded-e-lg  bg-cover group-hover:bg-center ease-out duration-300"
+                  className="h-[240px] w-full rounded-t-lg bg-cover duration-300 ease-out hover:bg-center"
                   style={{
                     backgroundImage: `url(${imgUrl})`,
                   }}
                 ></div>
+                <div className="flex font-semibold py-4 px-6">
+                  <div className="flex-1 space-y-2">
+                    <h3 className="  text-xl font-semibold">{projectName}</h3>
+                    <h3 className=" text-neutral-500 text-lg font-medium">
+                      {projectType}
+                    </h3>
+                  </div>
+                  <div className="flex text-base group-hover:underline group-hover:underline-offset-2 ">
+                    <span className="font-normal group-hover:font-semibold">
+                      Read More
+                    </span>
+                    <BsArrowUpRight className="w-[20px] h-[20px] group-hover:stroke-1 mt-[2px]" />
+                  </div>
+                </div>
               </div>
             </button>
           );

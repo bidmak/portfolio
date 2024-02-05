@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import * as data from "./data/data";
 import { useState } from "react";
 import Popup from "./components/Common/Popup";
+import "./App.css";
 
 function App() {
   const [popup, setPopup] = useState(false);
@@ -54,13 +55,14 @@ function App() {
         processPopup={processPopup}
       />
 
+      {/* Contact Page component */}
       <ContactPage
         id={data.navItems.contact.label}
         contactDetails={data.contactDetails}
       />
 
       {/* Footer component */}
-      <Footer />
+      <Footer companyName={data.companyName} />
     </main>
   );
 }

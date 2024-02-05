@@ -13,9 +13,7 @@ const AboutMeFull = ({ aboutDetails, className }) => {
         </h3>
       </div>
       <div className="text w-full float-left mb-[50px]">
-        <p className="text-[rgba(255,255,255,.7)] leading-loose">
-          {aboutDetails}
-        </p>
+        <p className="text-neutral-300 leading-loose">{aboutDetails}</p>
       </div>
     </div>
   );

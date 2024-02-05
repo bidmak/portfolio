@@ -4,13 +4,11 @@ import strathclyde from "../assets/images/strathclyde.png";
 import lasu from "../assets/images/lasu.jpeg";
 import technician from "../assets/images/technician.jpeg";
 import intern from "../assets/images/intern.jpeg";
-import auction from "../assets/images/auction.png";
 
 export const companyName = "Bidmak";
 export const name = "Samuel Makanjuola";
 export const profession = "Software Engineer";
 
-export const instagram = "https://www.instagram.com/_bidmak";
 export const aboutMe = (
   <>
     I'm a versatile <span className="font-medium">{profession}</span>, based in
@@ -112,10 +110,8 @@ export const experiences = [
     company: "University of Strathclyde",
     title: "MSc Adv. Software Engr",
     description: [
-      "Collaborative software engineer adept at understanding cross-team requirements. Specialized in crafting...",
-      "Orido is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
-      "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
-      "That’s why more companies are not only reevaluating their website’s design but also partnering with Orido, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
+      "In web development, I am proficient in both front-end and back-end frameworks. On the front end, I have expertise in React, creating dynamic and user-friendly interfaces. On the back end, I've worked extensively with Django, crafting robust and scalable APIs.",
+      "My academic journey has equipped me with a solid foundation in various technologies, allowing me to contribute effectively to different stages of the development lifecycle. I am excited to bring my versatile skills and leadership experience to collaborative projects. Let's connect and explore opportunities together!",
     ],
     link: "#",
     imgUrl: strathclyde,
@@ -126,10 +122,8 @@ export const experiences = [
     company: "Outcess Limited",
     title: "Software Developer",
     description: [
-      "Collaborative software engineer adept at understanding cross-team requirements. Specialized in crafting...",
-      "Orido is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
-      "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
-      "That’s why more companies are not only reevaluating their website’s design but also partnering with Orido, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
+      "In web development, I am proficient in both front-end and back-end frameworks. On the front end, I have expertise in React, creating dynamic and user-friendly interfaces. On the back end, I've worked extensively with Django, crafting robust and scalable APIs.",
+      "My academic journey has equipped me with a solid foundation in various technologies, allowing me to contribute effectively to different stages of the development lifecycle. I am excited to bring my versatile skills and leadership experience to collaborative projects. Let's connect and explore opportunities together!",
     ],
     link: "#",
     imgUrl: developer,
@@ -140,10 +134,8 @@ export const experiences = [
     company: "Netcom Africa Limited",
     title: "Support Engineer",
     description: [
-      "Collaborative software engineer adept at understanding cross-team requirements. Specialized in crafting...",
-      "Orido is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
-      "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
-      "That’s why more companies are not only reevaluating their website’s design but also partnering with Orido, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
+      "In web development, I am proficient in both front-end and back-end frameworks. On the front end, I have expertise in React, creating dynamic and user-friendly interfaces. On the back end, I've worked extensively with Django, crafting robust and scalable APIs.",
+      "My academic journey has equipped me with a solid foundation in various technologies, allowing me to contribute effectively to different stages of the development lifecycle. I am excited to bring my versatile skills and leadership experience to collaborative projects. Let's connect and explore opportunities together!",
     ],
     link: "#",
     imgUrl: technician,
@@ -154,10 +146,8 @@ export const experiences = [
     company: "TotalEnergies",
     title: "Graduate Engineer",
     description: [
-      "Collaborative software engineer adept at understanding cross-team requirements. Specialized in crafting...",
-      "Orido is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
-      "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
-      "That’s why more companies are not only reevaluating their website’s design but also partnering with Orido, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
+      "In web development, I am proficient in both front-end and back-end frameworks. On the front end, I have expertise in React, creating dynamic and user-friendly interfaces. On the back end, I've worked extensively with Django, crafting robust and scalable APIs.",
+      "My academic journey has equipped me with a solid foundation in various technologies, allowing me to contribute effectively to different stages of the development lifecycle. I am excited to bring my versatile skills and leadership experience to collaborative projects. Let's connect and explore opportunities together!",
     ],
     link: "#",
     imgUrl: technician,
@@ -168,10 +158,8 @@ export const experiences = [
     company: "Lagos State University",
     title: "BSc Mechanical Engr",
     description: [
-      "Collaborative software engineer adept at understanding cross-team requirements. ido is a leading web design agency with an award-winning design team that creates innovative, effecti Specialized in crafting...",
-      "Orido is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
-      "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
-      "That’s why more companies are not only reevaluating their website’s design but also partnering with Orido, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
+      "In web development, I am proficient in both front-end and back-end frameworks. On the front end, I have expertise in React, creating dynamic and user-friendly interfaces. On the back end, I've worked extensively with Django, crafting robust and scalable APIs.",
+      "My academic journey has equipped me with a solid foundation in various technologies, allowing me to contribute effectively to different stages of the development lifecycle. I am excited to bring my versatile skills and leadership experience to collaborative projects. Let's connect and explore opportunities together!",
     ],
     link: "#",
     imgUrl: lasu,
@@ -182,10 +170,8 @@ export const experiences = [
     company: "Beta Glass PLC",
     title: "Mech Engr Intern",
     description: [
-      "Collaborative software engineer adept at understanding cross-team requirements. Specialized in crafting...",
-      "Orido is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
-      "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
-      "That’s why more companies are not only reevaluating their website’s design but also partnering with Orido, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
+      "In web development, I am proficient in both front-end and back-end frameworks. On the front end, I have expertise in React, creating dynamic and user-friendly interfaces. On the back end, I've worked extensively with Django, crafting robust and scalable APIs.",
+      "My academic journey has equipped me with a solid foundation in various technologies, allowing me to contribute effectively to different stages of the development lifecycle. I am excited to bring my versatile skills and leadership experience to collaborative projects. Let's connect and explore opportunities together!",
     ],
     link: "#",
     imgUrl: intern,
@@ -197,9 +183,8 @@ export const projects = [
     projectName: "E-Commerce Website",
     projectType: "Web Development",
     description: [
-      "Orido is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
-      "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
-      "That’s why more companies are not only reevaluating their website’s design but also partnering with Orido, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
+      "In web development, I am proficient in both front-end and back-end frameworks. On the front end, I have expertise in React, creating dynamic and user-friendly interfaces. On the back end, I've worked extensively with Django, crafting robust and scalable APIs.",
+      "My academic journey has equipped me with a solid foundation in various technologies, allowing me to contribute effectively to different stages of the development lifecycle. I am excited to bring my versatile skills and leadership experience to collaborative projects. Let's connect and explore opportunities together!",
     ],
     imgUrl: strathclyde,
     additionalImages: [technician, intern, strathclyde, developer],
@@ -209,13 +194,13 @@ export const projects = [
     projectName: "E-Commerce Website",
     projectType: "Web Development",
     description: ["Job Description", "Job Description", "Job Description"],
-    imgUrl: developer,
+    imgUrl: strathclyde,
   },
   {
     projectName: "E-Commerce Website",
     projectType: "Web Development",
     description: ["Job Description", "Job Description", "Job Description"],
-    imgUrl: auction,
+    imgUrl: strathclyde,
   },
   {
     projectName: "E-Commerce Website",
@@ -244,5 +229,9 @@ export const popData = {
 };
 
 export const contactDetails = {
-  phoneNumber: "This is my phone number",
+  followLinks: followLinks,
+  phoneNumber: "+44 (0)73 6667 3338",
+  email: "bidmak4sure@yahoo.com",
+  message:
+    "Let's connect and explore exciting opportunities together! Whether you have a project idea, want to collaborate, or just want to say hello, I'd love to hear from you. Feel free to reach out through my details below or drop me an email. Looking forward to connecting!",
 };
