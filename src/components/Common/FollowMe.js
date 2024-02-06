@@ -15,7 +15,7 @@ const FollowMe = ({ followLinks, lnkStyle, iconStyle }) => {
                 href={LinkItem.link}
                 target="_blank"
                 rel="noreferrer"
-                title={LinkItem.profile}
+                title={`Follow me on ${LinkItem.profile}`}
               >
                 {React.cloneElement(LinkItem.icon, {
                   className: `absolute text-xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${

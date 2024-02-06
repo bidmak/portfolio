@@ -1,6 +1,8 @@
 import React from "react";
 import FollowMe from "../../components/Common/FollowMe";
 import AboutSvg from "../../components/Common/AboutSvg";
+import DownloadSvg from "../../components/Common/DownloadSvg";
+import Resume from "../../data/cv/Samuel_Makanjuola_Resume.pdf";
 import { GiShamrock } from "react-icons/gi";
 import { PiShootingStarLight } from "react-icons/pi";
 import { PiStarLight } from "react-icons/pi";
@@ -12,13 +14,28 @@ const ContactPage = ({ id, contactDetails }) => {
       className="contact-section w-full h-auto clear-both bg-neutral-950"
     >
       <div className="container py-[120px] text-white relative">
-        <div className="mx-28 mb-28">
-          <h3 className="mb-5 text-[44px] font-bold">Let's work together</h3>
-          <p className="text-neutral-400 font-light leading-[28px]">
-            {contactDetails.message}
-          </p>
+        <div className="mx-28 mb-28 flex items-center justify-between space-x-10">
+          <div className="info">
+            <h3 className="mb-5 text-[44px] font-bold">Let's work together</h3>
+            <p className="text-neutral-400 font-light leading-[28px]">
+              {contactDetails.message}
+            </p>
+          </div>
+          <div className="w-auto">
+            <a
+              className="group space-x-4 whitespace-nowrap font-semibold text-lg text-white bg-[#6244c5]  px-[30px] py-[15px] rounded-xl transition duration-300 hover:text-black hover:bg-neutral-50"
+              href={Resume}
+              download="Samuel_Makanjuola_CV.pdf"
+              target="_blank"
+              rel="noreferrer"
+              title="Download my CV"
+            >
+              Download CV
+              <DownloadSvg className="inline-block ms-3 fill-white transition duration-300 group-hover:fill-black group-hover:text-2xl" />
+            </a>
+          </div>
         </div>
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between space-x-20">
           <div className="personal-contacts flex space-x-20">
             <div className="phone-number space-y-2">
               <span className="text-neutral-400">Call:</span>
@@ -28,8 +45,15 @@ const ContactPage = ({ id, contactDetails }) => {
             </div>
             <div className="email space-y-2">
               <span className="text-neutral-400">Email:</span>
-              <h3 className="font-semibold text-2xl tracking-[-0.5px]">
+              <h3 className="relative font-semibold text-2xl tracking-[-0.5px]">
                 {contactDetails.email}
+                <a
+                  className="absolute inset-0"
+                  href={`mailto:${contactDetails.email}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  title={`Send an email to ${contactDetails.email}`}
+                ></a>
               </h3>
             </div>
           </div>

@@ -233,5 +233,5 @@ export const contactDetails = {
   phoneNumber: "+44 (0)73 6667 3338",
   email: "bidmak4sure@yahoo.com",
   message:
-    "Let's connect and explore exciting opportunities together! Whether you have a project idea, want to collaborate, or just want to say hello, I'd love to hear from you. Feel free to reach out through my details below or drop me an email. Looking forward to connecting!",
+    "Let's connect and explore exciting opportunities together! Whether you have a project idea, want to collaborate, or just want to say hello, I'd love to hear from you. Feel free to reach out through my details below or drop me an email. For recruiters, you can download my CV to learn more about my professional background.  Looking forward to connecting!",
 };
