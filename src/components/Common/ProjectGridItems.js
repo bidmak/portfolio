@@ -1,55 +1,70 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 
 const ProjectGridItems = ({ projects, processPopup }) => {
+  const [hovered, setHovered] = useState(null);
+
   return (
-    <div className="grid-container grid grid-cols-2 gap-8">
+    <div className="grid-container grid grid-cols-3 gap-6">
       {projects.map(
-        ({
-          projectName,
-          projectType,
-          description,
-          imgUrl,
-          additionalImages,
-          projectLink,
-        }) => {
+        (
+          {
+            projectName,
+            projectType,
+            description,
+            imgUrl,
+            additionalImages,
+            projectLink,
+          },
+          index
+        ) => {
+          const isHovered = hovered === index;
           return (
-            <button
-              onClick={(e) => {
-                e.preventDefault();
-                processPopup({
-                  title: projectName,
-                  company: projectType,
-                  description,
-                  imgUrl,
-                  additionalImages,
-                  projectLink,
-                });
-              }}
+            <div
+              key={index}
+              onMouseEnter={() => setHovered(index)}
+              onMouseLeave={() => setHovered(null)}
             >
-              <div className="relative text-start group rounded-lg bg-white divide-y-2 divide-gray-300 ">
+              <div className="group relative shadow-md ">
                 <div
-                  className="h-[240px] w-full rounded-t-lg bg-cover duration-300 ease-out hover:bg-center"
+                  className="h-60 w-full bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${imgUrl})`,
                   }}
                 ></div>
-                <div className="flex font-semibold py-4 px-6">
-                  <div className="flex-1 space-y-2">
-                    <h3 className="  text-xl font-semibold">{projectName}</h3>
-                    <h3 className=" text-neutral-500 text-lg font-medium">
-                      {projectType}
-                    </h3>
+                {isHovered && (
+                  <div
+                    onClick={(e) => {
+                      e.preventDefault();
+                      processPopup({
+                        title: projectName,
+                        company: projectType,
+                        description,
+                        imgUrl,
+                        additionalImages,
+                        projectLink,
+                      });
+                    }}
+                    className="absolute inset-0 bg-black bg-opacity-80  cursor-pointer	 flex items-center justify-center font-semibold "
+                  >
+                    <div className="text-center text-neutral-50 space-y-8">
+                      <div className="flex-1 space-y-2">
+                        <h3 className="  text-xl font-semibold">
+                          {projectName}
+                        </h3>
+                        <h3 className=" text-neutral-400 text-lg font-medium">
+                          {projectType}
+                        </h3>
+                      </div>
+                      <div className="underline underline-offset-2 ">
+                        <span className="font-normal text-sm">Read More</span>
+                        <BsArrowUpRight className="inline-block w-[18px] h-[18px] ms-2 mt-[2px]" />
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex text-base group-hover:underline group-hover:underline-offset-2 ">
-                    <span className="font-normal group-hover:font-semibold">
-                      Read More
-                    </span>
-                    <BsArrowUpRight className="w-[20px] h-[20px] group-hover:stroke-1 mt-[2px]" />
-                  </div>
-                </div>
+                )}
               </div>
-            </button>
+            </div>
           );
         }
       )}

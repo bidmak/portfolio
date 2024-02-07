@@ -1,17 +1,20 @@
 @keyframes wave {
-    0%, 100% {
+  0%, 100% {
       transform: rotate(0deg);
-    }
-    20%, 60% {
-      transform: rotate(-10deg);
-    }
-    40%, 80% {
-      transform: rotate(10deg);
-    }
   }
+  25% {
+      transform: rotate(-5deg);
+  }
+  50% {
+      transform: rotate(5deg);
+  }
+  75% {
+      transform: rotate(-5deg);
+  }
+}
 
   .hand-wave {
-    animation: wave 1.5s infinite; /* You can adjust the animation duration */
+    animation: wave 2s infinite; 
     transform-origin: bottom center;
   }
 
@@ -19,7 +22,7 @@
     position: absolute;
     content: "";
     width: 70px;
-    height: 1.5px;
+    height: 1.2px;
     background-color: gray;
     left: 0;
     top: 15px;

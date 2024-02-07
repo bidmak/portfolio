@@ -10,10 +10,13 @@ const Company = ({ companyName, className, scrollToSection }) => {
     >
       <h3
         className={`${
-          className ? className : "font-bold text-3xl text-[#6244C5]"
+          className
+            ? className
+            : "font-bold text-3xl text-[#6244C5] dark:text-neutral-100"
         }`}
       >
-        {companyName} <i className="fa-brands fa-typo3"></i>
+        {companyName}{" "}
+        <i className="fa-brands fa-typo3 text-[#6244C5] dark:text-[#6244C5]"></i>
       </h3>
     </div>
   );

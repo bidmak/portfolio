@@ -19,7 +19,7 @@ function App() {
     setPopItems(items);
   };
   return (
-    <main>
+    <main className="text-neutral-950 dark:text-neutral-50 ">
       <Popup popup={popup} setPopup={setPopup} popItems={popItems} />
 
       {/* Header component */}

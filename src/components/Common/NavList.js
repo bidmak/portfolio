@@ -12,7 +12,9 @@ const NavList = ({ navItemsArray, activeSection, scrollToSection }) => {
           >
             <a
               href={`#${label}`}
-              className={`${label === activeSection ? "active-border" : ""}`}
+              className={` dark:border-neutral-100 dark:text-neutral-100 ${
+                label === activeSection ? "border-b-2 border-neutral-950 " : ""
+              }`}
               onClick={(e) => scrollToSection(label, e)}
             >
               {page}

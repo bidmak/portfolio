@@ -4,7 +4,10 @@ import Experience from "../../components/Common/Experience";
 
 const ExperiencePage = ({ id, experiences, processPopup }) => {
   return (
-    <section class=" w-full h-auto clear-both float-left bg-neutral-50" id={id}>
+    <section
+      class=" w-full h-auto clear-both float-left bg-neutral-100"
+      id={id}
+    >
       <div class=" w-full h-auto clear-both float-left px-0 py-[120px]">
         <div class="container px-24 mx-auto">
           <div class=" w-full float-left">

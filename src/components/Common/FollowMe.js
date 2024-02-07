@@ -3,11 +3,11 @@ import React from "react";
 const FollowMe = ({ followLinks, lnkStyle, iconStyle }) => {
   return (
     <>
-      <span class="text-[16px] font-medium">Follow me:</span>
-      <ul class="flex items-center relative top-[5px] ml-2">
+      <span class="text-[16px] font-medium ">Follow me:</span>
+      <ul class="flex items-center space-x-2 relative top-[5px] ml-2">
         {followLinks.map((LinkItem) => {
           return (
-            <li className="group mr-2" key={LinkItem.profile}>
+            <li className="group " key={LinkItem.profile}>
               <a
                 class={`inline-block relative rounded-full ${
                   lnkStyle ? lnkStyle : ""

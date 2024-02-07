@@ -30,7 +30,7 @@ const Popup = ({ popup, setPopup, popItems }) => {
           <div className="popup-informations">
             {backgroundImageUrl && (
               <div
-                className="image rounded-lg relative mb-5 bg-cover hover:bg-center ease-out duration-300 border-[1px] border-gray-400"
+                className="image rounded-lg shadow-md mb-5 bg-cover hover:bg-center ease-out duration-300"
                 style={containerStyle}
               ></div>
             )}
@@ -73,7 +73,7 @@ const Popup = ({ popup, setPopup, popItems }) => {
                 {popItems.additionalImages.map((img, index) => {
                   return (
                     <div
-                      className={`grid-item bg-cover hover:bg-center ease-out duration-300 border-[1px] border-gray-400 rounded-lg ${
+                      className={`grid-item rounded-lg shadow-md bg-cover hover:bg-center ease-out duration-300 ${
                         index === 0 ? "col-span-2 h-[360px]" : "h-[200px]"
                       }`}
                       style={{
