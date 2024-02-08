@@ -1,6 +1,6 @@
 import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io";
 import developer from "../assets/images/developer.jpeg";
-import strathclyde from "../assets/images/lasu.jpeg";
+import strathclyde from "../assets/images/1.jpeg";
 import lasu from "../assets/images/lasu.jpeg";
 import technician from "../assets/images/technician.jpeg";
 import intern from "../assets/images/intern.jpeg";

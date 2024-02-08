@@ -1,5 +1,5 @@
-import React from "react";
-import { ImCancelCircle } from "react-icons/im";
+import React, { useState } from "react";
+import { CgCloseR, CgCloseO } from "react-icons/cg";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import "./Popup.css";
 
@@ -9,33 +9,37 @@ const Popup = ({ popup, setPopup, popItems }) => {
   const containerStyle = {
     backgroundImage: `url(${backgroundImageUrl})`,
   };
+
+  const [isHovered, setIsHovered] = useState(false);
+
   return popup ? (
-    <div className="popup z-40" onClick={() => setPopup(false)}>
+    <div className="popup bg-black/[.9] z-30" onClick={() => setPopup(false)}>
       <div
-        className="popup-inner rounded-lg"
+        className="popup-inner rounded bg-white dark:bg-gray-500"
         onClick={(e) => e.stopPropagation()}
       >
+        <button
+          className="close text-white hover:text-gray-100 z-40"
+          onClick={(e) => {
+            e.preventDefault();
+            setIsHovered(false);
+            setPopup(false);
+          }}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          {isHovered ? <CgCloseO /> : <CgCloseR />}
+        </button>
         <div className="popup-box">
-          <div className="close">
-            <button
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                setPopup(false);
-              }}
-            >
-              <ImCancelCircle />
-            </button>
-          </div>
           <div className="popup-informations">
             {backgroundImageUrl && (
               <div
-                className="image rounded-lg shadow-md mb-5 bg-cover hover:bg-center ease-out duration-300"
+                className="image rounded shadow-md mb-5 bg-cover hover:bg-center ease-out duration-500"
                 style={containerStyle}
               ></div>
             )}
             <div className="title mt-4 flex justify-start items-center">
-              <h3 className="pr-4">{popItems.title}</h3>
+              <h3 className="pr-4 dark:text-white">{popItems.title}</h3>
               {popItems.title && popItems.projectLink && (
                 <a
                   className="text-2xl hover:text-3xl"
@@ -48,9 +52,11 @@ const Popup = ({ popup, setPopup, popItems }) => {
               )}
             </div>
             <div className="company mb-2  flex justify-between items-center">
-              <h3 className="text-gray-600">{popItems.company}</h3>
+              <h3 className="text-gray-600 dark:text-gray-200">
+                {popItems.company}
+              </h3>
               {popItems.startDate && popItems.endDate && (
-                <span className="text-gray-700">
+                <span className="text-gray-700 dark:text-gray-200">
                   {popItems.startDate} - {popItems.endDate}
                 </span>
               )}
@@ -61,7 +67,9 @@ const Popup = ({ popup, setPopup, popItems }) => {
                   popItems.description.map((line) => {
                     return (
                       <>
-                        <li className="text-gray-950">{line}</li>
+                        <li className="text-gray-950 dark:text-gray-300">
+                          {line}
+                        </li>
                         <br />
                       </>
                     );
@@ -73,7 +81,7 @@ const Popup = ({ popup, setPopup, popItems }) => {
                 {popItems.additionalImages.map((img, index) => {
                   return (
                     <div
-                      className={`grid-item rounded-lg shadow-md bg-cover hover:bg-center ease-out duration-300 ${
+                      className={`grid-item rounded shadow-md bg-cover ${
                         index === 0 ? "col-span-2 h-[360px]" : "h-[200px]"
                       }`}
                       style={{

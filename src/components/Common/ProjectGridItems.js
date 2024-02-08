@@ -27,7 +27,7 @@ const ProjectGridItems = ({ projects, processPopup }) => {
             >
               <div className="group relative shadow-md ">
                 <div
-                  className="h-60 w-full bg-cover bg-center"
+                  className="h-72 w-full bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${imgUrl})`,
                   }}
@@ -45,20 +45,20 @@ const ProjectGridItems = ({ projects, processPopup }) => {
                         projectLink,
                       });
                     }}
-                    className="absolute inset-0 bg-black bg-opacity-80  cursor-pointer	 flex items-center justify-center font-semibold "
+                    className="absolute inset-0 bg-black/[.8] cursor-pointer flex items-center justify-center"
                   >
                     <div className="text-center text-neutral-50 space-y-8">
-                      <div className="flex-1 space-y-2">
-                        <h3 className="  text-xl font-semibold">
-                          {projectName}
-                        </h3>
-                        <h3 className=" text-neutral-400 text-lg font-medium">
+                      <div className=" space-y-2">
+                        <h3 className="text-xl font-semibold">{projectName}</h3>
+                        <h3 className="text-neutral-400 text-lg font-medium">
                           {projectType}
                         </h3>
                       </div>
-                      <div className="underline underline-offset-2 ">
-                        <span className="font-normal text-sm">Read More</span>
-                        <BsArrowUpRight className="inline-block w-[18px] h-[18px] ms-2 mt-[2px]" />
+                      <div className="flex justify-center">
+                        <div className="border-b w-fit">
+                          <span className="font-normal text-sm">Read More</span>
+                          <BsArrowUpRight className="inline-block w-[18px] h-[18px] ms-2 mt-[2px]" />
+                        </div>
                       </div>
                     </div>
                   </div>

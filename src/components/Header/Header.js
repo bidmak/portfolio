@@ -43,7 +43,7 @@ const Header = ({ navItems, companyName }) => {
       document.documentElement.classList.remove("dark");
       setIsDarkMode(false);
     }
-  }, []);
+  }, [prefersDarkMode.matches]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,7 +53,7 @@ const Header = ({ navItems, companyName }) => {
       const active = navItemsArray.find(({ label }) => {
         const section = document.getElementById(label);
         if (section) {
-          const sectionTop = section.offsetTop - 150;
+          const sectionTop = section.offsetTop - 230;
           const sectionBottom = sectionTop + section.offsetHeight;
           return scrollPosition >= sectionTop && scrollPosition < sectionBottom;
         }
@@ -82,7 +82,7 @@ const Header = ({ navItems, companyName }) => {
   }, [navItemsArray, activeSection]);
 
   return (
-    <header className="fixed z-40  bg-neutral-50 dark:bg-neutral-800 w-full">
+    <header className="fixed z-20  bg-neutral-50 dark:bg-neutral-800 w-full">
       <nav
         className={`container flex justify-between my-5 duration-300 ${
           isScrolled ? "header-container ease-in my-3" : "ease-out"

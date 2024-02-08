@@ -9,14 +9,11 @@ import { PiStarLight } from "react-icons/pi";
 
 const ContactPage = ({ id, contactDetails }) => {
   return (
-    <section
-      id={id}
-      className="contact-section w-full h-auto clear-both bg-neutral-950"
-    >
+    <section id={id} className="w-full h-auto clear-both bg-neutral-950">
       <div className="container py-[120px] text-white relative">
         <div className="mx-28 mb-28 flex items-center justify-between space-x-10">
           <div className="info">
-            <h3 className="mb-5 text-[44px] font-bold">Let's work together</h3>
+            <h3 className="mb-5 text-heading">Let's work together</h3>
             <p className="text-neutral-400 font-light leading-[28px]">
               {contactDetails.message}
             </p>
@@ -36,14 +33,14 @@ const ContactPage = ({ id, contactDetails }) => {
           </div>
         </div>
         <div className="flex items-center justify-between space-x-20">
-          <div className="personal-contacts flex space-x-20">
-            <div className="phone-number space-y-2">
+          <div className="flex space-x-20">
+            <div className="space-y-2">
               <span className="text-neutral-400">Call:</span>
               <h3 className="font-semibold text-2xl tracking-[-0.5px]">
                 {contactDetails.phoneNumber}
               </h3>
             </div>
-            <div className="email space-y-2">
+            <div className="space-y-2">
               <span className="text-neutral-400">Email:</span>
               <h3 className="relative font-semibold text-2xl tracking-[-0.5px]">
                 {contactDetails.email}
@@ -57,7 +54,7 @@ const ContactPage = ({ id, contactDetails }) => {
               </h3>
             </div>
           </div>
-          <div className="social-medias flex items-center">
+          <div className="flex items-center">
             <FollowMe
               followLinks={contactDetails.followLinks}
               lnkStyle="w-[52px] h-[52px] bg-neutral-700 rounded-full  group-hover:bg-neutral-50"

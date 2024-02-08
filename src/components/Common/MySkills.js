@@ -6,15 +6,18 @@ const MySkills = ({ mySkills, className }) => {
       <div className=" mb-[30px]">
         <h3 className="text-white text-heading">My Skills</h3>
       </div>
-      <div className="flex flex-wrap flex-row ">
-        {mySkills.map((skill) => {
+      <ul className="flex flex-wrap flex-row ">
+        {mySkills.map((skill, index) => {
           return (
-            <p className="bg-[#FFC448] text-[#6244C5] dark:text-neutral-900 px-5 py-2 mr-2 mt-2 rounded-sm font-semibold">
+            <li
+              key={index}
+              className="bg-[#FFC448] text-[#6244C5] dark:text-neutral-900 px-5 py-2 mr-2 mt-2 rounded-sm font-semibold"
+            >
               {skill}
-            </p>
+            </li>
           );
         })}
-      </div>
+      </ul>
     </div>
   );
 };
