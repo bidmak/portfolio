@@ -5,7 +5,7 @@ const ProjectGridItems = ({ projects, processPopup }) => {
   const [hovered, setHovered] = useState(null);
 
   return (
-    <div className="grid-container grid grid-cols-3 gap-6">
+    <div className="grid-container grid grid-cols-2 gap-6">
       {projects.map(
         (
           {

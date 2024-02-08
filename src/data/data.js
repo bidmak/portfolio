@@ -1,7 +1,7 @@
 import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io";
-import test1 from "../assets/images/1.jpeg";
-import test2 from "../assets/images/2.jpg";
 import test3 from "../assets/images/3.jpeg";
+import test4 from "../assets/images/4.png";
+import test5 from "../assets/images/5.png";
 
 export const companyName = "Bidmak";
 export const name = "Samuel Makanjuola";
@@ -184,39 +184,42 @@ export const projects = [
       "In web development, I am proficient in both front-end and back-end frameworks. On the front end, I have expertise in React, creating dynamic and user-friendly interfaces. On the back end, I've worked extensively with Django, crafting robust and scalable APIs.",
       "My academic journey has equipped me with a solid foundation in various technologies, allowing me to contribute effectively to different stages of the development lifecycle. I am excited to bring my versatile skills and leadership experience to collaborative projects. Let's connect and explore opportunities together!",
     ],
-    imgUrl: test1,
-    additionalImages: [test3, test2, test2],
-    projectLink: "https://www.google.com",
+    imgUrl: test5,
+    additionalImages: [test4, test4, test5],
+    projectLink: "https://samuelbidmak.vercel.app/",
   },
   {
     projectName: "E-Commerce Website",
     projectType: "Web Development",
-    description: ["Job Description", "Job Description", "Job Description"],
-    imgUrl: test3,
+    description: [
+      "In web development, I am proficient in both front-end and back-end frameworks. On the front end, I have expertise in React, creating dynamic and user-friendly interfaces. On the back end, I've worked extensively with Django, crafting robust and scalable APIs.",
+      "My academic journey has equipped me with a solid foundation in various technologies, allowing me to contribute effectively to different stages of the development lifecycle. I am excited to bring my versatile skills and leadership experience to collaborative projects. Let's connect and explore opportunities together!",
+    ],
+    imgUrl: test4,
+    additionalImages: [test4, test4, test5],
+    projectLink: "https://samuelbidmak.vercel.app/",
   },
   {
     projectName: "E-Commerce Website",
     projectType: "Web Development",
-    description: ["Job Description", "Job Description", "Job Description"],
-    imgUrl: test1,
+    description: [
+      "In web development, I am proficient in both front-end and back-end frameworks. On the front end, I have expertise in React, creating dynamic and user-friendly interfaces. On the back end, I've worked extensively with Django, crafting robust and scalable APIs.",
+      "My academic journey has equipped me with a solid foundation in various technologies, allowing me to contribute effectively to different stages of the development lifecycle. I am excited to bring my versatile skills and leadership experience to collaborative projects. Let's connect and explore opportunities together!",
+    ],
+    imgUrl: test4,
+    additionalImages: [test4, test4, test5],
+    projectLink: "https://samuelbidmak.vercel.app/",
   },
   {
     projectName: "E-Commerce Website",
     projectType: "Web Development",
-    description: ["Job Description", "Job Description", "Job Description"],
-    imgUrl: test3,
-  },
-  {
-    projectName: "E-Commerce Website",
-    projectType: "Web Development",
-    description: ["Job Description", "Job Description", "Job Description"],
-    imgUrl: test1,
-  },
-  {
-    projectName: "E-Commerce Website",
-    projectType: "Web Development",
-    description: ["Job Description", "Job Description", "Job Description"],
-    imgUrl: test3,
+    description: [
+      "In web development, I am proficient in both front-end and back-end frameworks. On the front end, I have expertise in React, creating dynamic and user-friendly interfaces. On the back end, I've worked extensively with Django, crafting robust and scalable APIs.",
+      "My academic journey has equipped me with a solid foundation in various technologies, allowing me to contribute effectively to different stages of the development lifecycle. I am excited to bring my versatile skills and leadership experience to collaborative projects. Let's connect and explore opportunities together!",
+    ],
+    imgUrl: test5,
+    additionalImages: [test4, test4, test5],
+    projectLink: "https://samuelbidmak.vercel.app/",
   },
 ];
 
