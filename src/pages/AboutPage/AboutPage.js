@@ -4,14 +4,14 @@ import MySkills from "../../components/Common/MySkills";
 
 const AboutPage = ({ id, aboutDetails, mySkills }) => {
   return (
-    <section class=" w-full h-auto clear-both float-left" id={id}>
-      <div class="w-full h-auto clear-both float-left bg-[#6244C5] text-neutral-950 px-24 mx-auto py-[80px]">
-        <div class=" w-full h-auto max-w-[1070px] mx-auto my-0 flex items-start space-x-10">
+    <section class=" w-full clear-both bg-[#6244C5]" id={id}>
+      <div class="container ">
+        <div class="flex space-x-16 content-space-y">
           <AboutMeFull
             aboutDetails={aboutDetails}
-            className="w-[65%] relative pr-[38px]"
+            className="w-[60%] relative"
           />
-          <MySkills mySkills={mySkills} className="w-[35%]" />
+          <MySkills mySkills={mySkills} className="w-[40%]" />
         </div>
       </div>
     </section>

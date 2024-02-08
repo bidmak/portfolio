@@ -82,13 +82,10 @@ const Header = ({ navItems, companyName }) => {
   }, [navItemsArray, activeSection]);
 
   return (
-    <header
-      id="header"
-      className="fixed z-40  bg-neutral-50 dark:bg-neutral-800 w-full"
-    >
+    <header className="fixed z-40  bg-neutral-50 dark:bg-neutral-800 w-full">
       <nav
-        className={`flex justify-between my-5 duration-300 ${
-          isScrolled ? "header-container ease-in my-3" : "container ease-out"
+        className={`container flex justify-between my-5 duration-300 ${
+          isScrolled ? "header-container ease-in my-3" : "ease-out"
         }`}
         style={{ alignItems: "center" }}
       >

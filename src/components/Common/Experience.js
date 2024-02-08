@@ -17,7 +17,7 @@ const Experience = ({ experiences, processPopup }) => {
               className="current relative group hover:bg-[#6244C5] transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"
             >
               <div
-                className={`list-border ${
+                className={`list-border dark:border-neutral-200 ${
                   index === 0 ? "list-first" : ""
                 } w-full flex items-center justify-between relative py-[25px] pl-[25px] pr-[35px] `}
               >

@@ -4,7 +4,7 @@ import ProjectGridItems from "../../components/Common/ProjectGridItems";
 const ProjectPage = ({ id, projects, processPopup }) => {
   return (
     <section
-      className=" w-full h-auto clear-both float-left bg-neutral-50"
+      className=" w-full h-auto clear-both float-left bg-neutral-50 dark:bg-[#302f43]"
       id={id}
     >
       <div className=" w-full h-auto clear-both float-left py-[120px]">

@@ -49,3 +49,14 @@
     padding-inline: 6rem; /* 2-extra-large screens and above */
   }
 }
+
+.text-heading {
+  font-size: 46px;
+  letter-spacing: -0.5px;
+  font-weight: bold;
+}
+
+.content-space-y {
+  padding-top: 120px;
+  padding-bottom: 150px;
+}
