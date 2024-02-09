@@ -45,7 +45,7 @@ const ProjectGridItems = ({ projects, processPopup }) => {
                         projectLink,
                       });
                     }}
-                    className="absolute inset-0 bg-black/[.8] cursor-pointer flex items-center justify-center"
+                    className="absolute inset-0 bg-black/[.9] cursor-pointer flex items-center justify-center"
                   >
                     <div className="text-center text-neutral-50 space-y-8">
                       <div className=" space-y-2">

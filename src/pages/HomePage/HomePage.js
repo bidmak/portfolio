@@ -19,8 +19,8 @@ const HomePage = ({ id, name, profession, aboutMe, followLinks }) => {
       id={id}
       className="w-full h-auto  bg-neutral-50 dark:bg-neutral-800"
     >
-      <div className="container">
-        <div className="h-[100vh] flex items-center">
+      <div className="container relative home-content">
+        <div className="home-content flex items-center">
           <div className="pb-20 space-y-4">
             <PersonalInfo name={name} profession={profession} />
             <div className="max-w-[400px]">
@@ -44,12 +44,12 @@ const HomePage = ({ id, name, profession, aboutMe, followLinks }) => {
             className="absolute inset-0"
           ></button>
         </div>
-      </div>
-      <div className="absolute w-1/2 bottom-0 top-0  right-0 ">
-        <div
-          className="w-full h-full bg-cover bg-center scale-x-[-1]"
-          style={{ backgroundImage: `url(${developer})` }}
-        ></div>
+        <div className="absolute w-1/2 bottom-0 top-0 -translate-x-[50%] left-[75%] ">
+          <div
+            className="w-full h-full bg-cover bg-center scale-x-[-1]"
+            style={{ backgroundImage: `url(${developer})` }}
+          ></div>
+        </div>
       </div>
     </section>
   );

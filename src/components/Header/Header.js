@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { MdDarkMode } from "react-icons/md";
-import { MdOutlineLightMode } from "react-icons/md";
+import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
+import { CgMenu } from "react-icons/cg";
 import NavList from "../Common/NavList";
 import Company from "../Common/Company";
 
@@ -9,6 +9,7 @@ const Header = ({ navItems, companyName }) => {
   const [activeSection, setActiveSection] = useState("home");
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(localStorage.theme === "dark");
+  const [menu, setMenu] = useState(false);
 
   const toggleMode = () => {
     if (document.documentElement.classList.contains("dark")) {
@@ -65,6 +66,7 @@ const Header = ({ navItems, companyName }) => {
         setActiveSection(active.label);
       }
 
+      // To update the header max-width
       if (window.scrollY > 50) {
         setIsScrolled(true);
       } else {
@@ -72,10 +74,7 @@ const Header = ({ navItems, companyName }) => {
       }
     };
 
-    // Listen for scroll events
     window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -84,13 +83,21 @@ const Header = ({ navItems, companyName }) => {
   return (
     <header className="fixed z-20  bg-neutral-50 dark:bg-neutral-800 w-full">
       <nav
-        className={`container flex justify-between my-5 duration-300 ${
+        className={`container lg:flex justify-between my-5 duration-300 ${
           isScrolled ? "header-container ease-in my-3" : "ease-out"
         }`}
         style={{ alignItems: "center" }}
       >
-        <Company companyName={companyName} scrollToSection={scrollToSection} />
-        <div className="flex space-x-12 items-center">
+        <div className="flex items-center justify-between">
+          <Company
+            companyName={companyName}
+            scrollToSection={scrollToSection}
+          />
+          <div className="inline lg:hidden">
+            <CgMenu />
+          </div>
+        </div>
+        <div className="hidden lg:flex space-x-12 items-center">
           <NavList
             navItemsArray={navItemsArray}
             activeSection={activeSection}
@@ -98,7 +105,7 @@ const Header = ({ navItems, companyName }) => {
           />
         </div>
         <div
-          className=" group p-2 rounded-full hover:bg-neutral-950 dark:hover:bg-neutral-50"
+          className="hidden lg:block group p-2 rounded-full hover:bg-neutral-950 dark:hover:bg-neutral-50"
           onClick={toggleMode}
         >
           {isDarkMode ? (
