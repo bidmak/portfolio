@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { TbArrowNarrowDown } from "react-icons/tb";
 import FollowMe from "../../components/Common/FollowMe";
 import developer from "../../assets/images/developer.svg";
@@ -14,17 +14,6 @@ const HomePage = ({ id, name, profession, aboutMe, followLinks }) => {
       window.history.pushState(null, "", `#${label}`);
     }
   };
-
-  const [iconSize, setIconSize] = useState(18);
-  const handleArrowDown = () => {
-    if (window.innerWidth < 1024) {
-      setIconSize(18);
-    } else {
-      setIconSize(22);
-    }
-  };
-
-  window.addEventListener("resize", handleArrowDown);
 
   return (
     <section
@@ -50,24 +39,21 @@ const HomePage = ({ id, name, profession, aboutMe, followLinks }) => {
               </span>
             </div>
             <div className="max-w-[460px] lg:max-w-[400px]">
-              <p className="text-[15px] text-neutral-600 lg:text-neutral-500 dark:text-neutral-400 font-light leading-[26px]">
+              <p className="text-[15px] text-neutral-700 lg:text-neutral-600 dark:text-neutral-400 font-light leading-[26px]">
                 {aboutMe}
               </p>
             </div>
           </div>
         </div>
-        <div className="absolute bottom-[200px] lg:bottom-[110px] flex items-center">
+        <div className="absolute bottom-[210px] lg:bottom-[110px] flex items-center">
           <FollowMe
             followLinks={followLinks}
-            lnkStyle="w-[46px] h-[46px] lg:w-[52px] lg:h-[52px] bg-neutral-100 lg:group-hover:bg-neutral-800 dark:bg-neutral-600 lg:dark:hover:bg-neutral-50 rounded-full  "
+            lnkStyle="w-[46px] h-[46px] lg:w-[52px] lg:h-[52px] bg-neutral-200/[.5] lg:group-hover:bg-neutral-800 dark:bg-neutral-600 lg:dark:hover:bg-neutral-50 rounded-full  "
             iconStyle="dark:fill-white lg:group-hover:fill-white lg:dark:group-hover:fill-black lg:group-hover:text-2xl"
           />
         </div>
-        <div className="absolute -translate-x-2/4 bottom-[80px] lg:bottom-[28px] left-[50%] z-[10] rounded-full bg-transparent border-2 border-black dark:border-white ">
-          <TbArrowNarrowDown
-            size={iconSize}
-            className="animate-bounce mb-2 mt-2"
-          />
+        <div className="absolute -translate-x-2/4 bottom-[110px] lg:bottom-[28px] left-[50%] z-[10] rounded-full bg-transparent border-2 border-black dark:border-white ">
+          <TbArrowNarrowDown size={22} className="animate-bounce mb-2 mt-2" />
           <button
             onClick={(e) => scrollToSection("about", e)}
             className="absolute inset-0"

@@ -85,7 +85,7 @@ const Header = ({ navItems, companyName }) => {
     <header className="fixed z-20  bg-neutral-50 dark:bg-neutral-800 w-full">
       <nav
         className={`container lg:flex justify-between my-5 lg:my-5 duration-300 ${
-          isScrolled ? "header-container ease-in my-6 lg:my-3" : "ease-out"
+          isScrolled ? "header-container ease-in my-7 lg:my-3" : "ease-out"
         }`}
         style={{ alignItems: "center" }}
       >
