@@ -6,12 +6,12 @@ const AboutPage = ({ id, aboutDetails, mySkills }) => {
   return (
     <section id={id} className=" w-full clear-both bg-[#6244C5]">
       <div className="container ">
-        <div className="flex space-x-16 content-space-y">
+        <div className="space-y-10 lg:space-y-0 lg:flex lg:space-x-16 content-space-y">
           <AboutMeFull
             aboutDetails={aboutDetails}
-            className="w-[60%] relative"
+            className="lg:w-[60%] relative"
           />
-          <MySkills mySkills={mySkills} className="w-[40%]" />
+          <MySkills mySkills={mySkills} className="lg:w-[40%]" />
         </div>
       </div>
     </section>

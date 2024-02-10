@@ -8,12 +8,14 @@ const NavList = ({ navItemsArray, activeSection, scrollToSection }) => {
         return (
           <li
             key={label}
-            className="transition duration-200 ease-out hover:scale-[1.12] "
+            className="transition duration-200 ease-out lg:hover:scale-[1.12] "
           >
             <a
               href={`#${label}`}
-              className={` dark:border-neutral-100 dark:text-neutral-100 ${
-                label === activeSection ? "border-b-2 border-neutral-950 " : ""
+              className={` lg:dark:border-neutral-100 dark:text-neutral-100 ${
+                label === activeSection
+                  ? "lg:border-b-2 lg:border-neutral-950 "
+                  : ""
               }`}
               onClick={(e) => scrollToSection(label, e)}
             >

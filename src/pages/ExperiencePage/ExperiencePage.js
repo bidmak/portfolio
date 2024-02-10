@@ -8,7 +8,7 @@ const ExperiencePage = ({ id, experiences, processPopup }) => {
       id={id}
     >
       <div className="container">
-        <div className="w-full space-y-14 content-space-y">
+        <div className="w-full space-y-10 lg:space-y-14 content-space-y">
           <div className="w-full">
             <h3 className="text-heading dark:text-white ">Experiences</h3>
           </div>

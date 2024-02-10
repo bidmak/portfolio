@@ -33,7 +33,7 @@ const HomePage = ({ id, name, profession, aboutMe, followLinks }) => {
     >
       <div className="container relative home-content">
         <div className="home-content flex items-center">
-          <div className="pb-20 space-y-4 lg:w-1/2">
+          <div className="pb-40 lg:pb-20 space-y-4 lg:w-1/2">
             <div className=" space-y-5  ">
               <div className="max-w-[300px] lg:max-w-full">
                 <h3 className="text-[38px] lg:text-[65px] font-semibold tracking-[-0.5px] mb-[11px] inline leading-none dark:text-white">
@@ -41,11 +41,11 @@ const HomePage = ({ id, name, profession, aboutMe, followLinks }) => {
                   <img
                     src={hand}
                     alt="hand-wave"
-                    className="inline-block w-[38px] lg:w-[58px] hand-wave ps-[10px]"
+                    className="inline-block w-[43px] lg:w-[58px] hand-wave ps-[10px]"
                   />
                 </h3>
               </div>
-              <span className="profession block relative pl-20 mt-2 text-[20px] font-light text-neutral-700 before:bg-neutral-700 dark:text-neutral-200 dark:before:bg-neutral-200">
+              <span className="profession block relative pl-20 mt-2 text-[20px] font-light text-neutral-800 lg:text-neutral-700 before:bg-neutral-700 dark:text-neutral-200 dark:before:bg-neutral-200">
                 {profession}
               </span>
             </div>
@@ -56,14 +56,14 @@ const HomePage = ({ id, name, profession, aboutMe, followLinks }) => {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-[130px] lg:bottom-[110px] flex items-center">
+        <div className="absolute bottom-[200px] lg:bottom-[110px] flex items-center">
           <FollowMe
             followLinks={followLinks}
-            lnkStyle="w-[46px] h-[46px] lg:w-[52px] lg:h-[52px] bg-neutral-100 group-hover:bg-neutral-800 dark:bg-neutral-600 dark:hover:bg-neutral-50 rounded-full  "
-            iconStyle="dark:fill-white group-hover:fill-white dark:group-hover:fill-black group-hover:text-2xl"
+            lnkStyle="w-[46px] h-[46px] lg:w-[52px] lg:h-[52px] bg-neutral-100 lg:group-hover:bg-neutral-800 dark:bg-neutral-600 lg:dark:hover:bg-neutral-50 rounded-full  "
+            iconStyle="dark:fill-white lg:group-hover:fill-white lg:dark:group-hover:fill-black lg:group-hover:text-2xl"
           />
         </div>
-        <div className="absolute -translate-x-2/4 bottom-[10px] lg:bottom-[28px] left-[50%] z-[10] rounded-full bg-transparent border-2 border-black dark:border-white ">
+        <div className="absolute -translate-x-2/4 bottom-[80px] lg:bottom-[28px] left-[50%] z-[10] rounded-full bg-transparent border-2 border-black dark:border-white ">
           <TbArrowNarrowDown
             size={iconSize}
             className="animate-bounce mb-2 mt-2"

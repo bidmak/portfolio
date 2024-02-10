@@ -3,11 +3,11 @@ import AboutSvg from "./AboutSvg";
 
 const AboutMeFull = ({ aboutDetails, className }) => {
   return (
-    <div className={className ?? "w-[50%] relative"}>
+    <div className={className ?? "lg:w-[50%] relative"}>
       <span className="hidden xl:block absolute top-0 right-full  mt-[-20px]">
         <AboutSvg className="w-[80px] h-[80px]" />
       </span>
-      <div className="mb-[30px]">
+      <div className="mb-[22px] lg:mb-[30px]">
         <h3 className="text-white text-heading">About Me</h3>
       </div>
       <div className="w-full">

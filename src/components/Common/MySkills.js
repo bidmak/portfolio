@@ -2,8 +2,8 @@ import React from "react";
 
 const MySkills = ({ mySkills, className }) => {
   return (
-    <div className={className ?? "w-[50%]"}>
-      <div className=" mb-[30px]">
+    <div className={className ?? "lg:w-[50%]"}>
+      <div className="mb-[22px] lg:mb-[30px]">
         <h3 className="text-white text-heading">My Skills</h3>
       </div>
       <ul className="flex flex-wrap flex-row ">

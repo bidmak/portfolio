@@ -1,5 +1,9 @@
 .header-container {
-  padding-inline: 1rem; 
+  padding-inline: 1.2rem; 
+  
+  @media (min-width: 768px) {
+    padding-inline: 2rem; 
+  }
 
   @media (min-width: 1024px) {
     padding-inline: 2rem; 
@@ -35,18 +39,23 @@
 }
 
 .text-heading {
-  font-size: 34px;
+  font-size: 32px;
   letter-spacing: -0.5px;
   font-weight: bold;
+}
+
+.content-space-y {
+  padding-top: 100px;
+  padding-bottom: 120px;
 }
 
 @media (min-width: 1024px) {
   .text-heading {
     font-size: 46px;
   }
+  .content-space-y {
+    padding-top: 120px;
+    padding-bottom: 150px;
+  }
 }
 
-.content-space-y {
-  padding-top: 120px;
-  padding-bottom: 150px;
-}

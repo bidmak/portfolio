@@ -5,7 +5,7 @@ const ProjectGridItems = ({ projects, processPopup }) => {
   const [hovered, setHovered] = useState(null);
 
   return (
-    <div className="grid-container grid grid-cols-2 gap-6">
+    <div className="grid-container grid grid-cols-1 lg:grid-cols-2 gap-6">
       {projects.map(
         (
           {
@@ -24,10 +24,21 @@ const ProjectGridItems = ({ projects, processPopup }) => {
               key={index}
               onMouseEnter={() => setHovered(index)}
               onMouseLeave={() => setHovered(null)}
+              onClick={(e) => {
+                e.preventDefault();
+                processPopup({
+                  title: projectName,
+                  company: projectType,
+                  description,
+                  imgUrl,
+                  additionalImages,
+                  projectLink,
+                });
+              }}
             >
               <div className="group relative shadow-md ">
                 <div
-                  className="h-72 w-full bg-cover bg-center"
+                  className="h-52 sm:h-80 md:h-96 lg:h-72 w-full bg-cover bg-left-top sm:bg-center"
                   style={{
                     backgroundImage: `url(${imgUrl})`,
                   }}

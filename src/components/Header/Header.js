@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
 import { CgMenu } from "react-icons/cg";
+import { CgClose } from "react-icons/cg";
 import NavList from "../Common/NavList";
 import Company from "../Common/Company";
 
@@ -83,8 +84,8 @@ const Header = ({ navItems, companyName }) => {
   return (
     <header className="fixed z-20  bg-neutral-50 dark:bg-neutral-800 w-full">
       <nav
-        className={`container lg:flex justify-between my-3 lg:my-5 duration-300 ${
-          isScrolled ? "header-container ease-in my-5 lg:my-3" : "ease-out"
+        className={`container lg:flex justify-between my-5 lg:my-5 duration-300 ${
+          isScrolled ? "header-container ease-in my-6 lg:my-3" : "ease-out"
         }`}
         style={{ alignItems: "center" }}
       >
@@ -95,7 +96,7 @@ const Header = ({ navItems, companyName }) => {
             scrollToSection={scrollToSection}
           />
           <div className="text-3xl lg:hidden" onClick={() => setMenu(!menu)}>
-            <CgMenu />
+            {menu ? <CgClose /> : <CgMenu />}
           </div>
         </div>
 
