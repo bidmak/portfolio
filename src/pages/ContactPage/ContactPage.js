@@ -19,18 +19,17 @@ const ContactPage = ({ id, contactDetails }) => {
                 {contactDetails.message}
               </p>
             </div>
-            <div>
-              <button
-                className="group whitespace-nowrap font-semibold lg:text-lg text-white bg-[#6244c5] px-[26px] py-[13px] lg:px-[30px] rounded-xl transition duration-300 hover:text-black hover:bg-neutral-50"
+            <div className="relative group w-max whitespace-nowrap font-semibold lg:text-lg text-white bg-[#6244c5] px-[26px] py-[13px] lg:px-[30px] rounded-xl transition duration-300 hover:text-black hover:bg-neutral-50">
+              Download CV
+              <DownloadSvg className="inline-block ms-2 w-[23px] h-[23px] lg:w-[22px] lg:h-[22px]  lg:ms-3 fill-white transition duration-300 group-hover:fill-black group-hover:text-2xl" />
+              <a
+                className="absolute inset-0"
                 href={Resume}
                 download="Samuel_Makanjuola_CV.pdf"
                 target="_blank"
                 rel="noreferrer"
                 title="Download my CV"
-              >
-                Download CV
-                <DownloadSvg className="inline-block ms-2 w-[23px] h-[23px] lg:w-[22px] lg:h-[22px]  lg:ms-3 fill-white transition duration-300 group-hover:fill-black group-hover:text-2xl" />
-              </button>
+              ></a>
             </div>
           </div>
           <div className="lg:flex items-center justify-between lg:space-x-20">
