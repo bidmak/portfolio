@@ -16,7 +16,7 @@ const Experience = ({ experiences, processPopup }) => {
               className="relative group hover:bg-[#6244C5] transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-105"
             >
               <div
-                className={`lg:flex items-center justify-between py-5 lg:py-7 px-[6px] lg:pl-[25px] lg:pr-[35px] border-b border-neutral-950 dark:border-neutral-600 ${
+                className={`lg:flex items-center justify-between py-5 lg:py-7 px-[6px] lg:pl-[25px] lg:pr-[35px] border-b border-neutral-400 dark:border-neutral-600 ${
                   index === 0 ? "border-t" : ""
                 }`}
               >
@@ -29,7 +29,7 @@ const Experience = ({ experiences, processPopup }) => {
                     {title}
                   </h3>
                 </div>
-                <div className="lg:w-[60%] flex items-center justify-between dark:text-neutral-300 group-hover:text-neutral-50">
+                <div className="text-neutral-600 lg:w-[60%] flex items-center justify-between dark:text-neutral-300 group-hover:text-neutral-50">
                   <div className="exp-description lg:pr-[150px]">
                     {description && description[0]}
                   </div>

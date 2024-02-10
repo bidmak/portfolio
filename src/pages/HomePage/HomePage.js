@@ -50,7 +50,7 @@ const HomePage = ({ id, name, profession, aboutMe, followLinks }) => {
               </span>
             </div>
             <div className="max-w-[460px] lg:max-w-[400px]">
-              <p className="text-[15px] text-neutral-500 dark:text-neutral-400 font-light leading-[26px]">
+              <p className="text-[15px] text-neutral-600 lg:text-neutral-500 dark:text-neutral-400 font-light leading-[26px]">
                 {aboutMe}
               </p>
             </div>
