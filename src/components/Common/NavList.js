@@ -3,7 +3,7 @@ import "./NavList.css";
 
 const NavList = ({ navItemsArray, activeSection, scrollToSection }) => {
   return (
-    <ul className="flex space-x-10 mr-16">
+    <ul className="lg:flex lg:space-x-10 lg:mr-16">
       {navItemsArray.map(({ page, label }) => {
         return (
           <li

@@ -83,21 +83,28 @@ const Header = ({ navItems, companyName }) => {
   return (
     <header className="fixed z-20  bg-neutral-50 dark:bg-neutral-800 w-full">
       <nav
-        className={`container lg:flex justify-between my-5 duration-300 ${
-          isScrolled ? "header-container ease-in my-3" : "ease-out"
+        className={`container lg:flex justify-between my-3 lg:my-5 duration-300 ${
+          isScrolled ? "header-container ease-in my-5 lg:my-3" : "ease-out"
         }`}
         style={{ alignItems: "center" }}
       >
         <div className="flex items-center justify-between">
           <Company
             companyName={companyName}
+            className="font-bold text-3xl text-[#6244C5] dark:text-neutral-100"
             scrollToSection={scrollToSection}
           />
-          <div className="inline lg:hidden">
+          <div className="text-3xl lg:hidden" onClick={() => setMenu(!menu)}>
             <CgMenu />
           </div>
         </div>
-        <div className="hidden lg:flex space-x-12 items-center">
+
+        <div
+          className={`${
+            menu ? "block" : "hidden"
+          } lg:flex space-x-12 items-center`}
+          onClick={() => setMenu(false)}
+        >
           <NavList
             navItemsArray={navItemsArray}
             activeSection={activeSection}
@@ -105,7 +112,9 @@ const Header = ({ navItems, companyName }) => {
           />
         </div>
         <div
-          className="hidden lg:block group p-2 rounded-full hover:bg-neutral-950 dark:hover:bg-neutral-50"
+          className={`${
+            menu ? "block" : "hidden"
+          } lg:block group p-2 rounded-full hover:bg-neutral-950 dark:hover:bg-neutral-50`}
           onClick={toggleMode}
         >
           {isDarkMode ? (

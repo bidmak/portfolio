@@ -25,7 +25,7 @@ const Experience = ({ experiences, processPopup }) => {
                     {"0"}
                     {index + 1}
                   </span>
-                  <h3 className="text-[29px] font-medium pl-[30px] group-hover:text-white">
+                  <h3 className="lg:text-[25px] xl:text-[29px] font-medium pl-[30px] group-hover:text-white">
                     {title}
                   </h3>
                 </div>
