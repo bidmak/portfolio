@@ -15,10 +15,6 @@
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
-    top: 50px;
-    bottom: 50px;
-    width: 800px;
-    padding-block: 40px;
   }
 
   .popup-box {
@@ -28,38 +24,5 @@
     scrollbar-width: thin;
     scrollbar-color: #999 transparent;
   }
-  
-  /* Close Button */
-  .close {
-    position: fixed;
-    top: -3px;
-    right: -60px;
-    margin: 0px;
-    font-size: 42px;
-  }
-  
-  /* Information Section */
-  .popup-informations {
-    padding-inline: 40px;
-    width: 100%;
-    height: 100%;
-  }
-  
-  /* Image Container */
-  .image {
-    width: 100%;
-    height: 360px;
-  }
-  
-  /* Title Section */
-  .title h3 {
-    font-weight: 600;
-    font-size: 30px;
-  }
 
-  .company h3 {
-    font-weight: 500;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
   

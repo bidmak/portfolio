@@ -23,6 +23,17 @@ const ProjectGridItems = ({ projects, processPopup }) => {
             <div
               key={index}
               className="group relative rounded shadow-lg shadow-indigo-500/50"
+              onClick={(e) => {
+                e.preventDefault();
+                processPopup({
+                  title: projectName,
+                  company: projectType,
+                  description,
+                  imgUrl,
+                  additionalImages,
+                  projectLink,
+                });
+              }}
               onMouseEnter={() => setHovered(index)}
               onMouseLeave={() => setHovered(null)}
             >
