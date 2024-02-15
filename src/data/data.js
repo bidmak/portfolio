@@ -1,7 +1,13 @@
 import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io";
-import test3 from "../assets/images/3.jpeg";
-import test4 from "../assets/images/4.png";
-import test5 from "../assets/images/5.png";
+import strathclyde from "../assets/images/strathclyde.png";
+import portfolio1 from "../assets/images/portfolio1.png";
+import portfolio2 from "../assets/images/portfolio2.png";
+import portfolio3 from "../assets/images/portfolio3.png";
+import portfolio4 from "../assets/images/portfolio4.png";
+import developer from "../assets/images/developer.jpeg";
+import technician from "../assets/images/technician.jpeg";
+import lasu from "../assets/images/lasu.jpeg";
+import intern from "../assets/images/intern.jpeg";
 
 export const companyName = "Bidmak";
 export const name = "Samuel Makanjuola";
@@ -86,19 +92,16 @@ export const mySkills = [
   "Django",
   "Javascript",
   "React",
-  "SQL",
+  "Next.js",
+  "Express.js",
   "HTML",
   "CSS",
-  "Express.js",
-  "Angular",
-  "Flask",
+  "MySQL",
   "Kotlin",
   "NoSQL",
   "MongoDB",
-  "TensorFlow",
   "UI/UX",
   "Github",
-  "Sci-Kit-Learn",
 ];
 
 export const experiences = [
@@ -108,71 +111,87 @@ export const experiences = [
     company: "University of Strathclyde",
     title: "MSc Adv. Software Engr",
     description: [
-      "In web development, I am proficient in both front-end and back-end frameworks. On the front end, I have expertise in React, creating dynamic and user-friendly interfaces. On the back end, I've worked extensively with Django, crafting robust and scalable APIs.",
-      "My academic journey has equipped me with a solid foundation in various technologies, allowing me to contribute effectively to different stages of the development lifecycle. I am excited to bring my versatile skills and leadership experience to collaborative projects. Let's connect and explore opportunities together!",
+      "Master of Science in Advanced Software Engineering from the esteemed University of Strathclyde, Glasgow.",
+      "Collaborated closely with a team of three members to conduct an extensive data analysis on a dataset comprising 70,000 records related to Cardiovascular Disease (CVD).",
+      "Excelled in a rigorous academic program, delving deep into cutting-edge topics and emerging technologies.",
+      "Acquired comprehensive knowledge and practical skills in software engineering principles, advanced algorithms, and distributed information systems.",
+      "Designed and implementated a User-centric Cardiovascular Health App, prioritizing user experience and accessibility.",
+      "Stood out as a proactive learner, consistently engaging in challenging coursework and hands-on projects.",
+      "Demonstrated proficiency in developing innovative solutions, including a Fitness Activity Mobile App with Kotlin aimed at promoting active lifestyles.",
+      "Collaborated effectively with peers and faculty, fostering a dynamic learning environment and achieving remarkable results.",
     ],
     link: "#",
-    imgUrl: test3,
+    imgUrl: strathclyde,
   },
   {
-    startDate: "Jan 2021",
+    startDate: "Sep 2021",
     endDate: "Jan 2023",
     company: "Outcess Limited",
     title: "Software Developer",
     description: [
-      "In web development, I am proficient in both front-end and back-end frameworks. On the front end, I have expertise in React, creating dynamic and user-friendly interfaces. On the back end, I've worked extensively with Django, crafting robust and scalable APIs.",
-      "My academic journey has equipped me with a solid foundation in various technologies, allowing me to contribute effectively to different stages of the development lifecycle. I am excited to bring my versatile skills and leadership experience to collaborative projects. Let's connect and explore opportunities together!",
+      "Collaborated cross-functionally with various teams to discern software requirements and architect robust, scalable APIs using Django, facilitating seamless data transmission.",
+      "Worked in tandem with developers to analyze the underlying causes of defects, providing essential insights for timely resolution and improvement.",
+      "Contributed to the development of backend systems supporting frontend applications, prioritizing efficient data management, processing, and analytics.",
+      "Played a key role in brainstorming sessions and problem-solving exercises, leveraging technical expertise to address complex challenges and optimize software performance.",
     ],
     link: "#",
-    imgUrl: test3,
+    imgUrl: developer,
   },
   {
-    startDate: "Jan 2019",
-    endDate: "Jan 2021",
+    startDate: "July 2019",
+    endDate: "Sep 2021",
     company: "Netcom Africa Limited",
     title: "Support Engineer",
     description: [
-      "In web development, I am proficient in both front-end and back-end frameworks. On the front end, I have expertise in React, creating dynamic and user-friendly interfaces. On the back end, I've worked extensively with Django, crafting robust and scalable APIs.",
-      "My academic journey has equipped me with a solid foundation in various technologies, allowing me to contribute effectively to different stages of the development lifecycle. I am excited to bring my versatile skills and leadership experience to collaborative projects. Let's connect and explore opportunities together!",
+      "Installed, tested, and meticulously maintained operating systems, application software, and system management tools to ensure optimal performance and functionality.",
+      "Expertly resolved a wide range of technical issues for customers and end-users across various systems and applications, demonstrating strong troubleshooting skills and a customer-focused approach.",
+      "Collaborated closely with supervisors to promptly escalate and address customer inquiries and technical issues, fostering strong teamwork and efficient problem resolution.",
     ],
     link: "#",
-    imgUrl: test3,
+    imgUrl: technician,
   },
   {
-    startDate: "Jan 2017",
-    endDate: "Jan 2019",
+    startDate: "Jan 2018",
+    endDate: "July 2019",
     company: "TotalEnergies",
     title: "Graduate Engineer",
     description: [
-      "In web development, I am proficient in both front-end and back-end frameworks. On the front end, I have expertise in React, creating dynamic and user-friendly interfaces. On the back end, I've worked extensively with Django, crafting robust and scalable APIs.",
-      "My academic journey has equipped me with a solid foundation in various technologies, allowing me to contribute effectively to different stages of the development lifecycle. I am excited to bring my versatile skills and leadership experience to collaborative projects. Let's connect and explore opportunities together!",
+      "Aided senior engineers and management in technical tasks, contributing to streamlined departmental operations and ensuring efficient project execution.",
+      "Collaborated closely with senior engineers on projects, providing valuable insights and assistance to drive successful outcomes.",
+      "Worked closely with engineers to conduct rigorous testing of oil products, ensuring quality and reliability in accordance with industry standards.",
     ],
     link: "#",
-    imgUrl: test3,
+    imgUrl: technician,
   },
   {
-    startDate: "Jan 2012",
-    endDate: "Jan 2017",
+    startDate: "Sep 2012",
+    endDate: "Dec 2017",
     company: "Lagos State University",
     title: "BSc Mechanical Engr",
     description: [
-      "In web development, I am proficient in both front-end and back-end frameworks. On the front end, I have expertise in React, creating dynamic and user-friendly interfaces. On the back end, I've worked extensively with Django, crafting robust and scalable APIs.",
-      "My academic journey has equipped me with a solid foundation in various technologies, allowing me to contribute effectively to different stages of the development lifecycle. I am excited to bring my versatile skills and leadership experience to collaborative projects. Let's connect and explore opportunities together!",
+      "Completed a Bachelor of Science degree in Mechanical Engineering, gaining comprehensive knowledge and skills in various engineering principles and practices.",
+      "Studied diverse subjects including mechanics, thermodynamics, fluid dynamics, and materials science, developing a solid foundation in engineering fundamentals.",
+      "Engaged in laboratory experiments to apply theoretical knowledge to real-world engineering problems, fostering practical problem-solving abilities.",
+      "Collaborated with classmates and professors on group projects, honing teamwork and communication skills essential for success in the engineering field.",
+      "Participated in internship program to gain practical industry experience and further enhance understanding of mechanical engineering concepts.",
     ],
     link: "#",
-    imgUrl: test3,
+    imgUrl: lasu,
   },
   {
-    startDate: "Jan 2016",
+    startDate: "June 2016",
     endDate: "Dec 2016",
     company: "Beta Glass PLC",
     title: "Mech Engr Intern",
     description: [
-      "In web development, I am proficient in both front-end and back-end frameworks. On the front end, I have expertise in React, creating dynamic and user-friendly interfaces. On the back end, I've worked extensively with Django, crafting robust and scalable APIs.",
-      "My academic journey has equipped me with a solid foundation in various technologies, allowing me to contribute effectively to different stages of the development lifecycle. I am excited to bring my versatile skills and leadership experience to collaborative projects. Let's connect and explore opportunities together!",
+      "Maintained organized physical files and digitized records, ensuring easy access and retrieval for authorized team members.",
+      "Performed daily data entry tasks, accurately inputting monitoring readings into Microsoft Excel spreadsheets to support ongoing operations.",
+      "Collaborated with colleagues to complete assigned tasks efficiently and contribute to team objectives.",
+      "Assisted with quality control procedures and conducted routine inspections to ensure compliance with industry standards.",
+      "Contributed to team meetings and discussions, offering insights and suggestions for process improvements.",
     ],
     link: "#",
-    imgUrl: test3,
+    imgUrl: intern,
   },
 ];
 
@@ -187,8 +206,8 @@ export const projects = [
       "Beyond its functionality, my project boasts an intuitive user interface designed to delight and captivate visitors. From its sleek design to its smooth animations, every detail has been meticulously crafted to ensure a memorable and enjoyable experience.",
       "Join me on this journey as I showcase my skills, passion, and dedication to excellence in web development. Explore my project today and discover the perfect blend of technology and creativity.",
     ],
-    imgUrl: test5,
-    additionalImages: [test4, test4, test5],
+    imgUrl: portfolio1,
+    additionalImages: [portfolio2, portfolio3, portfolio4],
     projectLink: "https://samuelbidmak.vercel.app/",
   },
   {
@@ -201,8 +220,8 @@ export const projects = [
       "Beyond its functionality, my project boasts an intuitive user interface designed to delight and captivate visitors. From its sleek design to its smooth animations, every detail has been meticulously crafted to ensure a memorable and enjoyable experience.",
       "Join me on this journey as I showcase my skills, passion, and dedication to excellence in web development. Explore my project today and discover the perfect blend of technology and creativity.",
     ],
-    imgUrl: test4,
-    additionalImages: [test4, test4, test5],
+    imgUrl: developer,
+    additionalImages: [developer, developer, technician],
     projectLink: "https://samuelbidmak.vercel.app/",
   },
   {
@@ -215,8 +234,8 @@ export const projects = [
       "Beyond its functionality, my project boasts an intuitive user interface designed to delight and captivate visitors. From its sleek design to its smooth animations, every detail has been meticulously crafted to ensure a memorable and enjoyable experience.",
       "Join me on this journey as I showcase my skills, passion, and dedication to excellence in web development. Explore my project today and discover the perfect blend of technology and creativity.",
     ],
-    imgUrl: test4,
-    additionalImages: [test4, test4, test5],
+    imgUrl: developer,
+    additionalImages: [developer, developer, technician],
     projectLink: "https://samuelbidmak.vercel.app/",
   },
   {
@@ -229,8 +248,8 @@ export const projects = [
       "Beyond its functionality, my project boasts an intuitive user interface designed to delight and captivate visitors. From its sleek design to its smooth animations, every detail has been meticulously crafted to ensure a memorable and enjoyable experience.",
       "Join me on this journey as I showcase my skills, passion, and dedication to excellence in web development. Explore my project today and discover the perfect blend of technology and creativity.",
     ],
-    imgUrl: test5,
-    additionalImages: [test4, test4, test5],
+    imgUrl: technician,
+    additionalImages: [developer, developer, technician],
     projectLink: "https://samuelbidmak.vercel.app/",
   },
 ];
