@@ -15,6 +15,7 @@ const ProjectGridItems = ({ projects, processPopup }) => {
             imgUrl,
             additionalImages,
             projectLink,
+            stacks,
           },
           index
         ) => {
@@ -63,6 +64,15 @@ const ProjectGridItems = ({ projects, processPopup }) => {
                       <h3 className="text-xl font-semibold">{projectName}</h3>
                       <h3 className="text-neutral-400 text-lg font-medium">
                         {projectType}
+                      </h3>
+                      <h3 className="flex justify-center divide-x-2 divide-indigo-400 text-indigo-300 text-lg font-medium">
+                        {stacks.map((stack, index) => {
+                          return (
+                            <p className="px-2" key={index}>
+                              {stack}
+                            </p>
+                          );
+                        })}
                       </h3>
                     </div>
                     <div className="flex justify-center">

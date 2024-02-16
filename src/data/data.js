@@ -8,6 +8,8 @@ import developer from "../assets/images/developer.jpeg";
 import technician from "../assets/images/technician.jpeg";
 import lasu from "../assets/images/lasu.jpeg";
 import intern from "../assets/images/intern.jpeg";
+import commerce from "../assets/images/commerce.png";
+import commerce2 from "../assets/images/commerce2.png";
 
 export const companyName = "Bidmak";
 export const name = "Samuel Makanjuola";
@@ -199,6 +201,7 @@ export const projects = [
   {
     projectName: "My Portfolio Website",
     projectType: "Web Development",
+    stacks: ["React", "Tailwind CSS"],
     description: [
       "Welcome to my project, a showcase of creativity, innovation, and technical excellence! Built with React and 99% Tailwind CSS, this project embodies the perfect fusion of cutting-edge technology and stunning design.",
       "Fully responsive and meticulously crafted, my project adapts seamlessly to every screen size, ensuring a flawless experience for every user. With features like dark and light mode, users can customize their viewing experience to suit their preferences, enhancing accessibility and usability.",
@@ -209,6 +212,29 @@ export const projects = [
     imgUrl: portfolio1,
     additionalImages: [portfolio2, portfolio3, portfolio4],
     projectLink: "https://samuelbidmak.com",
+  },
+  {
+    projectName: "Auctions Marketplace",
+    projectType: "Full-Stack Web Development",
+    stacks: ["Django", "Tailwind CSS"],
+    description: [
+      "This Django Auctions Marketplace project aims to provide a comprehensive platform for users to buy and sell goods through online auctions, similar to popular platforms like eBay. Leveraging the Django framework, this project offers a robust and user-friendly interface for both buyers and sellers, facilitating seamless transactions in a secure environment.",
+      "Key Features:",
+      "1. User Authentication: Users can register and log in securely, ensuring personalized experiences and safeguarding their account information.",
+      "2. Auction Listings: Sellers can create auction listings for their items, including detailed descriptions, images, and starting bid prices.",
+      "3. Bidding System: Buyers can place bids on auction listings, with real-time updates on current bid amounts.",
+      "4. Watchlist: Users can add items to their watchlist to keep track of auctions they're interested in and receive notifications about bidding activity.",
+      "5. Feedback System: Built-in messaging functionality enables communication between buyers and sellers, facilitating negotiations and resolving queries.",
+      "6. Search and Filter: Advanced search and filtering options empower users to find specific items based on categories, keywords, price ranges, and more.",
+      "7. Admin Panel: Administrators have access to a powerful admin panel to manage users, listings, bids, and site settings, ensuring smooth operation and oversight.",
+      "Future Enhancements:",
+      "1. Multi-currency Support: Enable support for multiple currencies to cater to users from diverse geographic regions.",
+      "2. Mobile App Integration: Develop a mobile app version of the platform to reach a wider audience and offer convenience on-the-go.",
+      "3. Social Media Integration: Integrate social media sharing options to allow users to share listings and promote their auctions.",
+    ],
+    imgUrl: commerce,
+    additionalImages: [commerce2, commerce, commerce2],
+    projectLink: "https://github.com/bidmak/E-commerce/tree/version2",
   },
 ];
 
