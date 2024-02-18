@@ -10,6 +10,10 @@ import lasu from "../assets/images/lasu.jpeg";
 import intern from "../assets/images/intern.jpeg";
 import commerce from "../assets/images/commerce.png";
 import commerce2 from "../assets/images/commerce2.png";
+import auction from "../assets/images/auction.png";
+import auction2 from "../assets/images/auction2.png";
+import auction3 from "../assets/images/auction3.png";
+import auction4 from "../assets/images/auction4.png";
 
 export const companyName = "Bidmak";
 export const name = "Samuel Makanjuola";
@@ -235,6 +239,27 @@ export const projects = [
     imgUrl: commerce,
     additionalImages: [commerce2, commerce, commerce2],
     projectLink: "https://github.com/bidmak/E-commerce/tree/version2",
+  },
+  {
+    projectName: "Auctions Marketplace First Edition",
+    projectType: "Full-Stack Web Development",
+    stacks: ["Django"],
+    description: [
+      "This Django Auctions Marketplace first edition project aims to provide a comprehensive platform for users to buy and sell goods through online auctions, similar to popular platforms like eBay. Leveraging the Django framework, this project offers a robust and user-friendly interface for both buyers and sellers, facilitating seamless transactions in a secure environment.",
+      "Key Features:",
+      "1. User Authentication: Users can register and log in securely, ensuring personalized experiences and safeguarding their account information.",
+      "2. Auction Listings: Sellers can create auction listings for their items, including detailed descriptions, images, and starting bid prices.",
+      "3. Bidding System: Buyers can place bids on auction listings, with real-time updates on current bid amounts.",
+      "4. Watchlist: Users can add items to their watchlist to keep track of auctions they're interested in and receive notifications about bidding activity.",
+      "5. Feedback System: Built-in messaging functionality enables communication between buyers and sellers, facilitating negotiations and resolving queries.",
+      "6. Search and Filter: Advanced search and filtering options empower users to find specific items based on categories, keywords, price ranges, and more.",
+      "Future Enhancements:",
+      "1. UI imporvement: Enhance the visual design and user interface to create a more engaging and aesthetically pleasing experience.",
+      "2. Responsiveness: Ensure that the website layout and elements adapt seamlessly to different screen sizes and devices for improved accessibility and usability.",
+    ],
+    imgUrl: auction,
+    additionalImages: [auction3, auction2, auction4],
+    projectLink: "https://github.com/bidmak/E-commerce/tree/main",
   },
 ];
 
