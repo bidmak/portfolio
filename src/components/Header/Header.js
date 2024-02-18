@@ -116,7 +116,7 @@ const Header = ({ navItems, companyName }) => {
         <div className="flex">
           <div
             className={`${
-              menu ? "block" : "hidden"
+              menu ? "block" : "hidden lg:block"
             } w-max group p-2 rounded-full lg:hover:bg-neutral-950 lg:dark:hover:bg-neutral-50`}
             onClick={toggleMode}
           >
