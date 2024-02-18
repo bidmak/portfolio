@@ -8,6 +8,7 @@ import { PiShootingStarLight } from "react-icons/pi";
 import { PiStarLight } from "react-icons/pi";
 
 const ContactPage = ({ id, contactDetails }) => {
+  const { phoneNumber, email, subject, message, followLinks } = contactDetails;
   return (
     <section id={id} className="w-full h-auto clear-both bg-neutral-950">
       <div className="container py-[100px] lg:py-[120px] text-white relative">
@@ -16,7 +17,7 @@ const ContactPage = ({ id, contactDetails }) => {
             <div className="info">
               <h3 className="mb-5 text-heading">Let's work together</h3>
               <p className="text-neutral-400 font-light leading-[28px]">
-                {contactDetails.message}
+                {message}
               </p>
             </div>
             <div className="relative group w-max whitespace-nowrap font-semibold lg:text-lg text-white bg-[#6244c5] px-[26px] py-[15px] lg:px-[30px] rounded-xl transition duration-300 lg:hover:text-black lg:hover:bg-neutral-50">
@@ -37,26 +38,28 @@ const ContactPage = ({ id, contactDetails }) => {
               <div className="space-y-1 lg:space-y-2">
                 <span className="text-neutral-400">Call:</span>
                 <h3 className="font-semibold text-[20px] lg:text-[22px] xl:text-2xl tracking-[-0.5px]">
-                  {contactDetails.phoneNumber}
+                  {phoneNumber}
                 </h3>
               </div>
               <div className="space-y-1 lg:space-y-2">
                 <span className="text-neutral-400">Email:</span>
                 <h3 className="relative font-semibold text-[20px] lg:text-[22px] xl:text-2xl tracking-[-0.5px]">
-                  {contactDetails.email}
+                  {email}
                   <a
                     className="absolute inset-0"
-                    href={`mailto:${contactDetails.email}`}
+                    href={`mailto:${email}?subject=${encodeURIComponent(
+                      subject
+                    )}`}
                     target="_blank"
                     rel="noreferrer"
-                    title={`Send an email to ${contactDetails.email}`}
+                    title={`Send an email to ${email}`}
                   ></a>
                 </h3>
               </div>
             </div>
             <div className="flex items-center">
               <FollowMe
-                followLinks={contactDetails.followLinks}
+                followLinks={followLinks}
                 lnkStyle="w-[52px] h-[52px] bg-neutral-700 rounded-full lg:group-hover:bg-neutral-50"
                 iconStyle="fill-white lg:group-hover:fill-black lg:group-hover:text-2xl"
               />

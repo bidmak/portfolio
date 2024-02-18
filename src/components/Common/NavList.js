@@ -8,7 +8,7 @@ const NavList = ({ navItemsArray, activeSection, scrollToSection }) => {
         return (
           <li
             key={label}
-            className="transition duration-200 ease-out lg:hover:scale-[1.12] "
+            className="py-2 lg:py-0 font-medium lg:font-normal transition duration-200 ease-out lg:hover:scale-[1.12] "
           >
             <a
               href={`#${label}`}

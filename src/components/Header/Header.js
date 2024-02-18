@@ -99,7 +99,6 @@ const Header = ({ navItems, companyName }) => {
             {menu ? <CgClose /> : <CgMenu />}
           </div>
         </div>
-
         <div
           className={`${
             menu ? "block" : "hidden"
@@ -112,18 +111,32 @@ const Header = ({ navItems, companyName }) => {
             scrollToSection={scrollToSection}
           />
         </div>
-        <div
-          className={`${
-            menu ? "block" : "hidden"
-          } lg:block group p-2 rounded-full hover:bg-neutral-950 dark:hover:bg-neutral-50`}
-          onClick={toggleMode}
-        >
-          {isDarkMode ? (
-            <MdOutlineLightMode className="h-6 w-6 cursor-pointer fill-white group-hover:fill-black" />
-          ) : (
-            <MdDarkMode className="h-6 w-6 cursor-pointer group-hover:fill-white" />
+        <div className="flex">
+          <div
+            className={`${
+              menu ? "block" : "hidden"
+            } w-max group p-2 rounded-full lg:hover:bg-neutral-950 lg:dark:hover:bg-neutral-50`}
+            onClick={toggleMode}
+          >
+            {isDarkMode ? (
+              <MdOutlineLightMode className="h-6 w-6 cursor-pointer fill-white lg:group-hover:fill-black" />
+            ) : (
+              <MdDarkMode className="h-6 w-6 cursor-pointer lg:group-hover:fill-white" />
+            )}
+          </div>
+          {menu && (
+            <div
+              className="lg:hidden w-full"
+              onClick={() => setMenu(false)}
+            ></div>
           )}
         </div>
+        {menu && (
+          <div
+            onMouseDown={() => setMenu(false)}
+            className="absolute bg-transparent h-[100vh] w-full lg:hidden"
+          ></div>
+        )}
       </nav>
     </header>
   );
