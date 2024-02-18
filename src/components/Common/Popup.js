@@ -63,9 +63,12 @@ const Popup = ({ popup, setPopup, popItems }) => {
             </div>
             <div className="description">
               {popItems.description &&
-                popItems.description.map((line) => {
+                popItems.description.map((line, index) => {
                   return (
-                    <p className="mb-[15px] lg:mb-[16px] text-[15px] lg:text-base text-gray-600 dark:text-gray-300">
+                    <p
+                      key={index}
+                      className="mb-[15px] lg:mb-[16px] text-[15px] lg:text-base text-gray-600 dark:text-gray-300"
+                    >
                       {line}
                     </p>
                   );
@@ -76,6 +79,7 @@ const Popup = ({ popup, setPopup, popItems }) => {
                 {popItems.additionalImages.map((img, index) => {
                   return (
                     <div
+                      key={index}
                       className={`grid-item rounded shadow-md bg-cover ${
                         index === 0
                           ? "md:col-span-2 h-[160px] sm:h-[230px] md:h-[260px] lg:h-[360px]"

@@ -73,13 +73,15 @@ const Header = ({ navItems, companyName }) => {
       } else {
         setIsScrolled(false);
       }
+
+      if (menu) setMenu(false);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [navItemsArray, activeSection]);
+  }, [navItemsArray, activeSection]); // eslint-disable-line
 
   return (
     <header className="fixed z-20  bg-neutral-50 dark:bg-neutral-800 w-full">
@@ -131,12 +133,6 @@ const Header = ({ navItems, companyName }) => {
             ></div>
           )}
         </div>
-        {menu && (
-          <div
-            onMouseDown={() => setMenu(false)}
-            className="absolute bg-transparent h-[100vh] w-full lg:hidden"
-          ></div>
-        )}
       </nav>
     </header>
   );
